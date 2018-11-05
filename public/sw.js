@@ -26,17 +26,17 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-9c5aa9d3647032a872a5.js"
+    "url": "webpack-runtime-71b91fdad7c8714ea0f1.js"
   },
   {
-    "url": "app-d7498f059cc2e12aa489.js"
+    "url": "app-7393dfd090d6d97b7c5a.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-0d5e6f4c41eb17bc3fb8.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "486e17a1074be6358635130b05921bae"
+    "revision": "ff3825cceba3987d2a25f5c167cfe9e2"
   },
   {
     "url": "component---src-pages-404-js-fe6dc2fafd22b034c202.js"
@@ -57,7 +57,7 @@ self.__precacheManifest = [
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/gatsby-starter-blog/offline-plugin-app-shell-fallback/index.html", {
+workbox.routing.registerNavigationRoute("/offline-plugin-app-shell-fallback/index.html", {
   whitelist: [/^[^?]*([^.?]{5}|\.html)(\?.*)?$/],
   blacklist: [/\?(.+&)?no-cache=1$/],
 });
