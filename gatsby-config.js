@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    title: 'Блог о производительности веб-приложений и сайтах с низким энергопотреблением',
+    author: 'Dmitry Schegolihin',
+    description: 'Дмитрий Щеголихин пишет о его опыте разработки для платформ Magento2, Vue и оптимизациях фронтенда. Помогает компаниям зарабатывать больше, делая веб-приложения быстрее.',
+    siteUrl: 'http://dimasch.github.io/',
   },
   plugins: [
     {
@@ -47,7 +47,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `Блог о производительности веб-приложений и сайтах с низким энергопотреблением`,
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,

@@ -26,7 +26,7 @@ class Layout extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            Блог
           </Link>
         </h1>
       )
@@ -47,7 +47,7 @@ class Layout extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            Блог
           </Link>
         </h3>
       )
