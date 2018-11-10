@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Блог о производительности веб-приложений и сайтах с низким энергопотреблением]]></title><description><![CDATA[Дмитрий Щеголихин пишет о его опыте разработки для платформ Magento2, Vue и оптимизациях фронтенда. Помогает компаниям зарабатывать больше, делая веб-приложения быстрее.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Wed, 07 Nov 2018 17:27:29 GMT</lastBuildDate><item><title><![CDATA[Процесс разработки модулей для magento1]]></title><description><![CDATA[Немного истории. На заре разработки magento-модулей в нашей команде в тот момент когда мы начали использовать composer для установки magento…]]></description><link>http://dimasch.github.io//composer-modman-n98/</link><guid isPermaLink="false">http://dimasch.github.io//composer-modman-n98/</guid><pubDate>Wed, 13 Jan 2016 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Немного истории.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Блог о производительности веб-приложений и сайтах с низким энергопотреблением]]></title><description><![CDATA[Дмитрий Щеголихин пишет о его опыте разработки для платформ Magento2, Vue и оптимизациях фронтенда. Помогает компаниям зарабатывать больше, делая веб-приложения быстрее.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sat, 10 Nov 2018 17:38:38 GMT</lastBuildDate><item><title><![CDATA[Полностью очистить хранилище Redis]]></title><description><![CDATA[Иногда бывает нужно полностью очистить Redis, развернутого в Doker-контейнере. Для удобного использования - можно создать alias, добавив его…]]></description><link>http://dimasch.github.io//redis-clear/</link><guid isPermaLink="false">http://dimasch.github.io//redis-clear/</guid><pubDate>Sat, 10 Nov 2018 17:27:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1991df597267d70bf9066a7d11969da0/d445f/redis.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 513px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 38.40155945419104%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABt0lEQVQoz5WSzUtUURjGr4RokbhxEVEpfRBG/4C0CP+CQFpKm4GWRkTboGVjkO78mNGFOTMaOo4zGZrdVs0tSPGKUo1zmSGc8SrzaWYjM/f8OvdelAlq0QMP531fnvOe57znKKJW428QloUQknYshEPLEiexzWNYjtbNFadwVKG0FGFvbJDc5DBHic26zoJ/IZ/PUyqV66QCZXd6nMzTh+SG+/n+oBe9u5P5jtNs3L9LxcxgSaFpmpTLZbLZHWdTtVpF0z4SDE2RSqcpFAqSRdfhJ08Pry+cYvXOLdKPPax23yB6qZHZ8w0cfl0nlTXxPvMy8XKSUZ+fQDBEeC7i5ENDIywuLvFiYBBVfe82XOm7R+ScIl01E7t8hui1FhautxK7epZK8gubSQP1ncrMTJiRUR+h0LTkFHFNw+t9LuuzBAJBfP4x98qfH3l41aIQvdjIG9ks1t5EuE0ecLONA+MbxYNDMtvb7O//4O3yMjk5t8TWFnPSpa6vYxgGH+Jx1nTddfirWCAR9KP23CYsXS50XWGt/wmlVJL/hePw5Ont4a9o/Mzt/iGoZ01+Mff7WE5sr/W08Rutkx9wro5NcQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Redis Logo&quot;
+        title=&quot;&quot;
+        src=&quot;/static/1991df597267d70bf9066a7d11969da0/d445f/redis.png&quot;
+        srcset=&quot;/static/1991df597267d70bf9066a7d11969da0/6235f/redis.png 148w,
+/static/1991df597267d70bf9066a7d11969da0/7d356/redis.png 295w,
+/static/1991df597267d70bf9066a7d11969da0/d445f/redis.png 513w&quot;
+        sizes=&quot;(max-width: 513px) 100vw, 513px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Иногда бывает нужно полностью очистить Redis, развернутого в Doker-контейнере.&lt;/p&gt;
+&lt;pre&gt;
+docker exec -it container-name redis-cli FLUSHALL
+&lt;/pre&gt;
+&lt;p&gt;Для удобного использования - можно создать alias, добавив его в ~/.bash_profile или ~/.basrc вашего домашнего каталога.&lt;/p&gt;
+&lt;pre&gt;
+alias redis-flush=&quot;docker exec -it container-name redis-cli FLUSHALL&quot;
+&lt;pre&gt;
+
+</content:encoded></item><item><title><![CDATA[Процесс разработки модулей для magento1]]></title><description><![CDATA[Немного истории. На заре разработки magento-модулей в нашей команде в тот момент когда мы начали использовать composer для установки magento…]]></description><link>http://dimasch.github.io//composer-modman-n98/</link><guid isPermaLink="false">http://dimasch.github.io//composer-modman-n98/</guid><pubDate>Wed, 13 Jan 2016 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Немного истории.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;На заре разработки magento-модулей в нашей команде в тот момент когда мы начали использовать composer для установки magento-модулей в
 проекты, появилась задача хранить код модуля при разработке отдельно от ядра magento. Дело в том что magento 1.x обладает довольно сложной
