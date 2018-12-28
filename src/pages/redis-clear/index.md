@@ -7,13 +7,13 @@ date: "2018-11-10T21:27:01.256Z"
 
 Иногда бывает нужно полностью очистить Redis, развернутого в Doker-контейнере.
 
-<pre>
+```shell
 docker exec -it container-name redis-cli FLUSHALL
-</pre>
+```
 
 Для удобного использования - можно создать alias, добавив его в ~/.bash_profile или ~/.basrc вашего домашнего каталога.
 
-<pre>
+```shell
 alias redis-flush="docker exec -it container-name redis-cli FLUSHALL"
-<pre>
+```
 

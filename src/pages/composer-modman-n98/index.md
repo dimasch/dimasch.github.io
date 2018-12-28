@@ -25,9 +25,9 @@ date: "2016-01-13T22:12:03.284Z"
 
 <ol>
  <li>Заходим в директорий с magento сайтом и делаем modman init, создается служебная директорий в которую в последствии будут устанавливаться модули .modman (по аналогии с composer - там vendor)</li>
- <li>Обязательно нужно разрешить использование симлинков в админке <pre>System > Configuration > Advanced > Developer</pre></li>
- <li>Один из вариантов делаем <pre>modman link path/to/module</pre> (есть ещё <pre>modman clone url</pre> - указывается путь до репозитория)</li>
- <li>Чтобы можно было сделать <pre>modman link</pre> или <pre>modman clone</pre> модуль должен содержать файл маппинга. Маппинг указывается для каждого файла модуля - по принципу source -> destination.</li>
+ <li>Обязательно нужно разрешить использование симлинков в админке `System > Configuration > Advanced > Developer`</li>
+ <li>Один из вариантов делаем `modman link path/to/module` (есть ещё `modman clone url` - указывается путь до репозитория)</li>
+ <li>Чтобы можно было сделать `modman link` или `modman clone` модуль должен содержать файл маппинга. Маппинг указывается для каждого файла модуля - по принципу source -> destination.</li>
 </ol>
 
 <p>Один из плюсов - полная интеграция modman и composer. Композер умеет читать маппинг модман-файла, то есть маппинг находится в одном файле и можно использовать две технологии одновременно. </p>
@@ -36,7 +36,7 @@ date: "2016-01-13T22:12:03.284Z"
 
 <p>Как n98magerun и generate-modman можно использовать применительно к modman? В n98magerun есть генератор модуля, но тут необходимо добавить магические ключи:</p>
 
-```bash
+```shell
 n98-magerun dev:module:create --add-all --modman --add-composer --author-name="Dmitry Schegolihin" --author-email="d.sch@gmail.com" Shegolihin Generated local
 ```
 
@@ -46,7 +46,7 @@ n98-magerun dev:module:create --add-all --modman --add-composer --author-name="D
 
 <p>Допустим в процессе работы понадобилось замапить ещё одну директорию - не забываем перегенирить modman файл маппинга и починить все симлинки modman repair. Из документации:</p>
 
-```bash
+```shell
 repair - rebuild all modman-created symlinks (no updates performed)
 ```
 
