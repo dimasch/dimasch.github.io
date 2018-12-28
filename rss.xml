@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Блог о производительности веб-приложений и сайтах с низким энергопотреблением]]></title><description><![CDATA[Дмитрий Щеголихин пишет о его опыте разработки для платформ Magento2, Vue и оптимизациях фронтенда. Помогает компаниям зарабатывать больше, делая веб-приложения быстрее.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 28 Dec 2018 07:42:41 GMT</lastBuildDate><item><title><![CDATA[Alias for clear redis cache]]></title><description><![CDATA[Иногда бывает нужно полностью очистить Redis, развернутого в Doker-контейнере. Для удобного использования - можно создать alias, добавив его…]]></description><link>http://dimasch.github.io//redis-clear/</link><guid isPermaLink="false">http://dimasch.github.io//redis-clear/</guid><pubDate>Sat, 10 Nov 2018 21:27:01 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Блог о производительности веб-приложений и сайтах с низким энергопотреблением]]></title><description><![CDATA[Дмитрий Щеголихин пишет о его опыте разработки для платформ Magento2, Vue и оптимизациях фронтенда. Помогает компаниям зарабатывать больше, делая веб-приложения быстрее.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 28 Dec 2018 16:49:26 GMT</lastBuildDate><item><title><![CDATA[Alias for clear redis cache]]></title><description><![CDATA[Иногда бывает нужно полностью очистить Redis, развернутого в Doker-контейнере. Для удобного использования - можно создать alias, добавив его…]]></description><link>http://dimasch.github.io//redis-clear/</link><guid isPermaLink="false">http://dimasch.github.io//redis-clear/</guid><pubDate>Sat, 10 Nov 2018 21:27:01 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/1991df597267d70bf9066a7d11969da0/d445f/redis.png&quot;
@@ -32,15 +32,9 @@
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;Иногда бывает нужно полностью очистить Redis, развернутого в Doker-контейнере.&lt;/p&gt;
-&lt;pre&gt;
-docker exec -it container-name redis-cli FLUSHALL
-&lt;/pre&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;docker exec -it container-name redis-cli FLUSHALL&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Для удобного использования - можно создать alias, добавив его в ~/.bash_profile или ~/.basrc вашего домашнего каталога.&lt;/p&gt;
-&lt;pre&gt;
-alias redis-flush=&quot;docker exec -it container-name redis-cli FLUSHALL&quot;
-&lt;pre&gt;
-
-</content:encoded></item><item><title><![CDATA[Improve you Magento1 module development process]]></title><description><![CDATA[Немного истории. На заре разработки magento-модулей в нашей команде в тот момент когда мы начали использовать composer для установки magento…]]></description><link>http://dimasch.github.io//composer-modman-n98/</link><guid isPermaLink="false">http://dimasch.github.io//composer-modman-n98/</guid><pubDate>Wed, 13 Jan 2016 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Немного истории.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;alias redis-flush=&amp;quot;docker exec -it container-name redis-cli FLUSHALL&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Improve you Magento1 module development process]]></title><description><![CDATA[Немного истории. На заре разработки magento-модулей в нашей команде в тот момент когда мы начали использовать composer для установки magento…]]></description><link>http://dimasch.github.io//composer-modman-n98/</link><guid isPermaLink="false">http://dimasch.github.io//composer-modman-n98/</guid><pubDate>Wed, 13 Jan 2016 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Немного истории.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;На заре разработки magento-модулей в нашей команде в тот момент когда мы начали использовать composer для установки magento-модулей в
 проекты, появилась задача хранить код модуля при разработке отдельно от ядра magento. Дело в том что magento 1.x обладает довольно сложной
@@ -57,23 +51,21 @@ alias redis-flush=&quot;docker exec -it container-name redis-cli FLUSHALL&quot;
 &lt;p&gt;Начало работы&lt;/p&gt;
 &lt;ol&gt;
  &lt;li&gt;Заходим в директорий с magento сайтом и делаем modman init, создается служебная директорий в которую в последствии будут устанавливаться модули .modman (по аналогии с composer - там vendor)&lt;/li&gt;
- &lt;li&gt;Обязательно нужно разрешить использование симлинков в админке &lt;pre&gt;System &gt; Configuration &gt; Advanced &gt; Developer&lt;/pre&gt;&lt;/li&gt;
- &lt;li&gt;Один из вариантов делаем &lt;pre&gt;modman link path/to/module&lt;/pre&gt; (есть ещё &lt;pre&gt;modman clone url&lt;/pre&gt; - указывается путь до репозитория)&lt;/li&gt;
- &lt;li&gt;Чтобы можно было сделать &lt;pre&gt;modman link&lt;/pre&gt; или &lt;pre&gt;modman clone&lt;/pre&gt; модуль должен содержать файл маппинга. Маппинг указывается для каждого файла модуля - по принципу source -&gt; destination.&lt;/li&gt;
+ &lt;li&gt;Обязательно нужно разрешить использование симлинков в админке `System &gt; Configuration &gt; Advanced &gt; Developer`&lt;/li&gt;
+ &lt;li&gt;Один из вариантов делаем `modman link path/to/module` (есть ещё `modman clone url` - указывается путь до репозитория)&lt;/li&gt;
+ &lt;li&gt;Чтобы можно было сделать `modman link` или `modman clone` модуль должен содержать файл маппинга. Маппинг указывается для каждого файла модуля - по принципу source -&gt; destination.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Один из плюсов - полная интеграция modman и composer. Композер умеет читать маппинг модман-файла, то есть маппинг находится в одном файле и можно использовать две технологии одновременно. &lt;/p&gt;
 &lt;p&gt;Теперь самое интересное - как же автоматизировать все рутинные операции? Тут нам помогут &lt;a href=&quot;https://github.com/netz98/n98-magerun&quot;&gt;n98-magerun&lt;/a&gt; и &lt;a href=&quot;https://github.com/mhauri/generate-modman&quot;&gt;generate-modman&lt;/a&gt;.
 &lt;p&gt;Как n98magerun и generate-modman можно использовать применительно к modman? В n98magerun есть генератор модуля, но тут необходимо добавить магические ключи:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;n98-magerun dev:module:create --add-all --modman --add-composer --author-name&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Dmitry Schegolihin&quot;&lt;/span&gt; --author-email&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;d.sch@gmail.com&quot;&lt;/span&gt; Shegolihin Generated local&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;n98-magerun dev:module:create --add-all --modman --add-composer --author-name=&amp;quot;Dmitry Schegolihin&amp;quot; --author-email=&amp;quot;d.sch@gmail.com&amp;quot; Shegolihin Generated local&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Командой будет создан скелетон модуля Generated с стандартной структурой magento-модуля, предподготовленным файлом конфигурации composer.json, c неймспейсом Shegolihin в local code pull и соответствующим файлом маппинга modman. Ключи --author-name и --author-email добавят параметры в composer.json&lt;/p&gt;
 &lt;p&gt;Структура каталогов получилась не совсем стандартной из-за директории src. Давайте её уберем: переносим содержимое src в текущюю папку, удаляем src и вызываем генератор автоматического маппинга generate-modman. В итоге должна получиться структура:&lt;/p&gt;
 &lt;p&gt;Допустим в процессе работы понадобилось замапить ещё одну директорию - не забываем перегенирить modman файл маппинга и починить все симлинки modman repair. Из документации:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;repair - rebuild all modman-created symlinks &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;no updates performed&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;repair - rebuild all modman-created symlinks (no updates performed)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Можно набрать в консоли команду modman - выдаст документацию, в которой можно быстро найти нужный ключ.&lt;/p&gt;
 &lt;p&gt;C наступающий Старым Новым Годом! ;-)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Admin user creation in Magento2]]></title><description><![CDATA[Выполняем команду в каталоге с установленной Magento2]]></description><link>http://dimasch.github.io//magento2-create-admin/</link><guid isPermaLink="false">http://dimasch.github.io//magento2-create-admin/</guid><pubDate>Tue, 16 Jun 2015 21:42:03 GMT</pubDate><content:encoded>&lt;p&gt;Выполняем команду в каталоге с установленной Magento2&lt;/p&gt;
-&lt;pre&gt;
-./bin/magento admin:user:create --admin-firstname=&quot;Admin&quot; --admin-lastname=&quot;User&quot; --admin-email=&quot;dimasch@gmail.com&quot; --admin-user=&quot;dimasch&quot; --admin-password=&quot;dimasch&quot;
-&lt;/pre&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;./bin/magento admin:user:create --admin-firstname=&amp;quot;Admin&amp;quot; --admin-lastname=&amp;quot;User&amp;quot; --admin-email=&amp;quot;dimasch@gmail.com&amp;quot; --admin-user=&amp;quot;dimasch&amp;quot; --admin-password=&amp;quot;dimasch&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
