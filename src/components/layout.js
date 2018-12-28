@@ -26,7 +26,7 @@ class Layout extends React.Component {
             }}
             to={'/'}
           >
-            Блог
+            Overcharged
           </Link>
         </h1>
       )
@@ -47,7 +47,7 @@ class Layout extends React.Component {
             }}
             to={'/'}
           >
-            Блог
+            Overcharged
           </Link>
         </h3>
       )

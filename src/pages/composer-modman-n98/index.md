@@ -1,5 +1,5 @@
 ---
-title: Процесс разработки модулей для magento1
+title: Improve you Magento1 module development process
 date: "2016-01-13T22:12:03.284Z"
 ---
 

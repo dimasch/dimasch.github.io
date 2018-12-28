@@ -1,5 +1,5 @@
 ---
-title: Очистить хранилище Redis
+title: Alias for clear redis cache
 date: "2018-11-10T21:27:01.256Z"
 ---
 

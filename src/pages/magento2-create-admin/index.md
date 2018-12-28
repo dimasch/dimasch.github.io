@@ -1,5 +1,5 @@
 ---
-title: Magento2 - cоздать пользователя-администратора
+title: Admin user creation in Magento2
 date: "2015-06-16T21:42:03.284Z"
 ---
 
