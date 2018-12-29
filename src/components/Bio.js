@@ -27,8 +27,7 @@ class Bio extends React.Component {
           }}
         />
         <p>
-        Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.{' '}
-          <a href="https://twitter.com/schegolikhin">twitter</a>
+          <a href="https://twitter.com/schegolikhin">Dmitry Schegolihin</a> writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.{' '}
         </p>
       </div>
     )
