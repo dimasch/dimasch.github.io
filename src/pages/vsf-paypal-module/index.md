@@ -18,7 +18,7 @@ So we need to implement the Paypal payment method as a module for VSF. Integrati
 
 ![Login to Magento2 backend](./login.png)
 
-Out of the box, Paypal provides a JavaScript implementation for interacting with the payment gateway. We will take this script as a starting point for interaction with the Paypal gateway `https://www.paypalobjects.com/api/checkout.js`for frontend part. You need create the PayPal Client IDs . To create a paypal app use link https://developer.paypal.com/developer/applications/create
+Out of the box, Paypal provides a JavaScript implementation for interacting with the payment gateway. We will take this script as a starting point for interaction with the Paypal gateway `https://www.paypalobjects.com/api/checkout.js` for frontend part. You need create the PayPal Client IDs . To create a paypal app use link https://developer.paypal.com/developer/applications/create
 
 Server part
 
@@ -34,7 +34,7 @@ From which we can see that there are two hooks `beforRegistration` and `afterReg
 
 ![Login to Magento2 backend](./login.png)
 
-The important point here is that we are trying to download the script only to the client side, since the hooks are processed on both the Client Side and Server Side, for this we wrap the check in `! Vue.prototype.$isServer`. Here the code `vsfpaypal` must match the code of the method of payment in Magento2. For these purposes, we implemented a simplified payment method for Magento2 https://github.com/develodesign/m2-paypal-payment
+The important point here is that we are trying to download the script only to the client side, since the hooks are processed on both the Client Side and Server Side, for this we wrap the check in `!Vue.prototype.$isServer`. Here the code `vsfpaypal` must match the code of the method of payment in Magento2. For these purposes, we implemented a simplified payment method for Magento2 https://github.com/develodesign/m2-paypal-payment
 
 Next, we will implement the Paypal button component upon clicking on which the standard Paypal pop-up window with the authorization and payment functionality on the gateway will be called. For the button, we use the standard Vue approach, a feature here is only the nuance of the initialization of the Paypal button, for this we use the standard hook `mounted` of the Vue component. This is the moment of the component life cycle when the Dom model is ready for calls, at this very moment we can render the Paypal button using its components:
 
@@ -54,7 +54,7 @@ To check for the current selected payment method, we use the property `this.$sto
 Criticism
 
 The modular architecture has given a new round to the development of the Vue Storefront project, but this system needs to be improved. In my opinion, it is necessary to improve the overlap of boxed or custom modules at the theme level, so that the functionality covered in the theme does not affect neighboring themes, like the fallback architecture in Magento2.
-It lacks the ability to overlap the search library `core / store / lib / search.ts`, namely the function` quickSearchByQuery` for example, extensions in the custom module to the ability to work with multiple ElasticSearch indexes. It would be cool to arrange this functionality in the form of a kernel module, this would allow to easily override the search function. But I figured out how to solve this moment - you can create a separate module based on queries through GraphQL, thus we will hide communication to several indexes or services outside of the GraphQL scheme.
+It lacks the ability to overlap the search library `core/store/lib/search.ts`, namely the function `quickSearchByQuery` for example, extensions in the custom module to the ability to work with multiple ElasticSearch indexes. It would be cool to arrange this functionality in the form of a kernel module, this would allow to easily override the search function. But I figured out how to solve this moment - you can create a separate module based on queries through GraphQL, thus we will hide communication to several indexes or services outside of the GraphQL scheme.
 
 Conclusion...
 
