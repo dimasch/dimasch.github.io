@@ -3,7 +3,7 @@ title: Admin user creation in Magento2
 date: "2015-06-16T21:42:03.284Z"
 ---
 
-Выполняем команду в каталоге с установленной Magento2
+Execute next command in directory with installed Magento2
 
 ```shell
 ./bin/magento admin:user:create --admin-firstname="Admin" --admin-lastname="User" --admin-email="dimasch@gmail.com" --admin-user="dimasch" --admin-password="dimasch"

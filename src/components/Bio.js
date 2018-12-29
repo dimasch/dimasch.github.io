@@ -27,10 +27,8 @@ class Bio extends React.Component {
           }}
         />
         <p>
-        Дмитрий Щеголихин пишет о его опыте разработки для платформ Magento2, Vue. Помогает компаниям зарабатывать больше, делая веб-приложения быстрее.{' '}
-          <a href="https://twitter.com/schegolikhin">
-            твиттер
-          </a>
+        Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.{' '}
+          <a href="https://twitter.com/schegolikhin">twitter</a>
         </p>
       </div>
     )

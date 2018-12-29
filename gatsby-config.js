@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Блог о производительности веб-приложений и сайтах с низким энергопотреблением',
+    title: 'About web performance and sites with energy low.',
     author: 'Dmitry Schegolihin',
-    description: 'Дмитрий Щеголихин пишет о его опыте разработки для платформ Magento2, Vue и оптимизациях фронтенда. Помогает компаниям зарабатывать больше, делая веб-приложения быстрее.',
+    description: 'Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.',
     siteUrl: 'http://dimasch.github.io/',
   },
   plugins: [
@@ -52,7 +52,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Блог о производительности веб-приложений и сайтах с низким энергопотреблением`,
+        name: `About web performance and sites with energy low.`,
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
