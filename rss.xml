@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sat, 29 Dec 2018 12:45:19 GMT</lastBuildDate><item><title><![CDATA[Development the Paypal Module for Vue Storefront]]></title><description><![CDATA[The  Develo vlog  has the article aboute development modules for Vue Storefront project. This may help in the development of new modules.]]></description><link>http://dimasch.github.io//vsf-paypal-module/</link><guid isPermaLink="false">http://dimasch.github.io//vsf-paypal-module/</guid><pubDate>Sun, 16 Dec 2018 09:30:00 GMT</pubDate><content:encoded>&lt;p&gt;The &lt;a href=&quot;https://www.develodesign.co.uk/news/&quot;&gt;Develo vlog&lt;/a&gt; has the article aboute development modules for Vue Storefront project. This may help in the development of new modules.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Clear redis cache from you docker container]]></title><description><![CDATA[Sometimes need clear all   cache for you Doker container. For automating this process you can add the   to   or  . Example:]]></description><link>http://dimasch.github.io//redis-clear/</link><guid isPermaLink="false">http://dimasch.github.io//redis-clear/</guid><pubDate>Sat, 10 Nov 2018 21:27:01 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 30 Dec 2018 10:59:35 GMT</lastBuildDate><item><title><![CDATA[Development the Paypal Module for Vue Storefront]]></title><description><![CDATA[The  Develo vlog  has the article aboute development modules for Vue Storefront project. This may help in the development of new modules.]]></description><link>http://dimasch.github.io//vsf-paypal-module/</link><guid isPermaLink="false">http://dimasch.github.io//vsf-paypal-module/</guid><pubDate>Sun, 16 Dec 2018 09:30:00 GMT</pubDate><content:encoded>&lt;p&gt;The &lt;a href=&quot;https://www.develodesign.co.uk/news/&quot;&gt;Develo vlog&lt;/a&gt; has the article aboute development modules for Vue Storefront project. This may help in the development of new modules.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Clear redis cache from you docker container]]></title><description><![CDATA[Sometimes need clear all   cache for you Doker container. For automating this process you can add the   to   or  . Example:]]></description><link>http://dimasch.github.io//redis-clear/</link><guid isPermaLink="false">http://dimasch.github.io//redis-clear/</guid><pubDate>Sat, 10 Nov 2018 21:27:01 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/1991df597267d70bf9066a7d11969da0/d445f/redis.png&quot;
@@ -109,4 +109,57 @@
   &lt;/span&gt;
   
   &lt;/a&gt;
-    &lt;/p&gt;</content:encoded></item></channel></rss>
+    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Show the git branch in Bash prompt]]></title><description><![CDATA[Snippet for show the git   in Bash prompt like on this screenshot: Open you   or   and add this snippet: Is meant to   the default prompt…]]></description><link>http://dimasch.github.io//show-git-branch-in-bash/</link><guid isPermaLink="false">http://dimasch.github.io//show-git-branch-in-bash/</guid><pubDate>Mon, 16 Jun 2014 09:15:05 GMT</pubDate><content:encoded>&lt;p&gt;Snippet for show the git &lt;code class=&quot;language-text&quot;&gt;branch&lt;/code&gt; in Bash prompt like on this screenshot:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fa44ae7d5f524b457e44b69e8bd0bdfe/66900/show-git-branch.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 34.33835845896148%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAABTElEQVQoz53MS0sCYRgF4PkVbaIr5TjaxZkcM3QuZqJrsyLEaNWiVUhmQWJqtayNgVKQSVkaZqObCsoi2lS/p8UI32m8QLbqsng4HN7DS13ePH9cV19rpeqbqmjKj3+n1PPpXS3evahUrvJQi2/vIRKJYS2aQGg9jtBGvJk/irX2CQRDUaSyRVDpc0V1m0V4uAFi4GhCd+oI01NHNxha+b3rmtnLaPTE2MeQ/o5uEt7cIVTyOK86BBck6yTxiG54ZDdcWndMOCBZRAi8HdK4BNkqQ9ZS4AU4bU6IvA2SiYXE8ZjS9mYDh2B4C9rDC9WujWyslUgWAWbjGDiGBac3gaVHv7T15m0ErG5IM9x4xnQNYmU1Auowp6hLy0F4p/3E6/PDNxOAb/Y3FtoEMDe/iN39NKiz8r16lK/g4KRAkpkCkpn8v6ROr5At3eIT2Yw6msS+cS4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Show git branch&quot;
+        title=&quot;&quot;
+        src=&quot;/static/fa44ae7d5f524b457e44b69e8bd0bdfe/fb8a0/show-git-branch.png&quot;
+        srcset=&quot;/static/fa44ae7d5f524b457e44b69e8bd0bdfe/1a291/show-git-branch.png 148w,
+/static/fa44ae7d5f524b457e44b69e8bd0bdfe/2bc4a/show-git-branch.png 295w,
+/static/fa44ae7d5f524b457e44b69e8bd0bdfe/fb8a0/show-git-branch.png 590w,
+/static/fa44ae7d5f524b457e44b69e8bd0bdfe/526de/show-git-branch.png 885w,
+/static/fa44ae7d5f524b457e44b69e8bd0bdfe/fa2eb/show-git-branch.png 1180w,
+/static/fa44ae7d5f524b457e44b69e8bd0bdfe/66900/show-git-branch.png 1194w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Open you &lt;code class=&quot;language-text&quot;&gt;~/.bashrc&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;~/.bash_profile&lt;/code&gt; and add this snippet:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;# Add git branch if its present to PS1
+
+parse_git_branch() {
+ git branch 2&amp;gt; /dev/null | sed -e &amp;#39;/^[^*]/d&amp;#39; -e &amp;#39;s/* \(.*\)/(\1)/&amp;#39;
+}
+if [ &amp;quot;$color_prompt&amp;quot; = yes ]; then
+ PS1=&amp;#39;${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;31m\]$(parse_git_branch)\[\033[00m\]\$ &amp;#39;
+else
+ PS1=&amp;#39;${debian_chroot:+($debian_chroot)}\u@\h:\w$(parse_git_branch)\$ &amp;#39;
+fi&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Is meant to &lt;code class=&quot;language-text&quot;&gt;replace&lt;/code&gt; the default prompt definition:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;if [ &amp;quot;$color_prompt&amp;quot; = yes ]; then
+    PS1=&amp;#39;${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ &amp;#39;
+else
+    PS1=&amp;#39;${debian_chroot:+($debian_chroot)}\u@\h:\w\$ &amp;#39;
+fi&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
