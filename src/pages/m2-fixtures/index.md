@@ -5,11 +5,15 @@ date: "2019-01-05T18:30:00.256Z"
 
 Instead of using the full sample data modules there is a possibility to use the products, categories, customers and orders created by the performance profiles.
 
+![Fixtures](./fixtures.png)
+
+Execute command for you Magento2 instance:
+
 ```shell
 bin/magento setup:performance:generate-fixtures setup/performance-toolkit/profiles/ce/small.xml
 ```
 
-Example working:
+Example working output:
 
 ```shell
 sportmage@MacBook-Pro m230 $ bin/magento setup:performance:generate-fixtures setup/performance-toolkit/profiles/ce/small.xml
