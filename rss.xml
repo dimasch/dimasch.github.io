@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 06 Jan 2019 10:57:15 GMT</lastBuildDate><item><title><![CDATA[PWA Studio - installation the Venia theme concept.]]></title><description><![CDATA[In the .env file set the value of   to the   of a running Magento instance. For my case is the  . Then execute: See some validation errors…]]></description><link>http://dimasch.github.io//m2-pwa-venia-install/</link><guid isPermaLink="false">http://dimasch.github.io//m2-pwa-venia-install/</guid><pubDate>Sun, 06 Jan 2019 14:51:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;git clone https://github.com/magento-research/pwa-studio.git
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 06 Jan 2019 11:19:08 GMT</lastBuildDate><item><title><![CDATA[PWA Studio - installation the Venia theme concept.]]></title><description><![CDATA[In the .env file set the value of   to the   of a running Magento instance. For my case is the  . Then execute: See some validation errors…]]></description><link>http://dimasch.github.io//m2-pwa-venia-install/</link><guid isPermaLink="false">http://dimasch.github.io//m2-pwa-venia-install/</guid><pubDate>Sun, 06 Jan 2019 14:51:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d8d0035195e477529d93999bd9626e37/d47ca/venia-home.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 69.86666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsSAAALEgHS3X78AAAB/0lEQVQoz6VSy27TQBT1x7DlB9iBWPADdMOGBQt2RbxUseAt+gOVCiUCEURQgTYqojQLZBBCpoSIughFNKrrxG9PHCd+zTiOJ+b6IZPCBomj0eje43PujO8dBmM8yhAcgh8Q4mmSr4oQFJTvDwYD2A3DGA6HwDBxHPM832w2oyia8fp4EtsfX/c3qziapCnGrutyHKfruiAILMuCngHWz4AzhGE4Ho/TPYpCzyEjOw0yEuB5HiihOFyBEMJMDwM+OI4DCtdxoBIs+CNIgYSTkyTJZXnAJDOglCJkiqKIEJIkCWJVlWVZ0jSt2+3qhj4tvNNcX5jL/F/wpxmIESZ7nT3T0HKiP+wtPblaqV9GtpAzne62rO9aphAGbm5h8jIdBb3hxc8fGq0mh9wAmMWVc2evHD09f+TVVhXSXu/H8tO5trjKsQ923tVTL6UMzcyt9v5KbfX7t+0vjdrBT35C44t3T126cXz+5snFewsUBF8b1+8cW3t/YW392lZ1qTDnJ9tI36jcZtcffnr7wncsYHbaG8vP5249PrHZeAYpDOFlfeFR7cz9yvldvpV393e3secgeR8HQdkSb2SYqFO2JySebR6ExCkthRkHWFEUa2DDA4InkTbM6iuqipAFE87LwZNSVM31vL+6Def4PsyUYFLOg9JilZo4prMpk/wHfgFvzQGJX7DfTAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Venia Home&quot;
+        title=&quot;&quot;
+        src=&quot;/static/d8d0035195e477529d93999bd9626e37/fb8a0/venia-home.png&quot;
+        srcset=&quot;/static/d8d0035195e477529d93999bd9626e37/1a291/venia-home.png 148w,
+/static/d8d0035195e477529d93999bd9626e37/2bc4a/venia-home.png 295w,
+/static/d8d0035195e477529d93999bd9626e37/fb8a0/venia-home.png 590w,
+/static/d8d0035195e477529d93999bd9626e37/d47ca/venia-home.png 750w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;git clone https://github.com/magento-research/pwa-studio.git
 cd pwa-studio
 npm install
 cp packages/venia-concept/.env.dist packages/venia-concept/.env&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
