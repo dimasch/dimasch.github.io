@@ -3,6 +3,7 @@ title: PWA Studio - installation the Venia theme concept.
 date: "2019-01-06T14:51:00.256Z"
 ---
 
+![Venia Home](./venia-home.png)
 
 ```shell
 git clone https://github.com/magento-research/pwa-studio.git
