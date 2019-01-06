@@ -71,7 +71,7 @@ See another errors:
 Use GraphiQL or another schema exploration tool on the Magento store to learn more.
 ```
 
-This happens because you're running against a Magento instance that has no Venia sample data and because the Venia GraphQL queries for product options fashion_color and fashion_size are hardcoded.
+This happens because you're running against a Magento instance that has no Venia sample data and because the Venia GraphQL queries for product options `fashion_color` and `fashion_size` are hardcoded.
 Related issue https://github.com/magento-research/pwa-studio/issues/626
 
 For fixed need to install the `Venia sample data`:
