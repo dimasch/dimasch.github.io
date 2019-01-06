@@ -45,6 +45,13 @@ Setup the `developer mode` for your magento instance:
 bin/magento deploy:mode:set developer
 ```
 
+After setup the `developer` mode we try to again execute build:
+
+```shell
+npm run build
+```
+
+See another errors:
 
 ```shell
 /Users/sportmage/workspace/pwa-studio/packages/venia-concept/src/queries/getProductDetail.graphql
