@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sat, 05 Jan 2019 18:07:23 GMT</lastBuildDate><item><title><![CDATA[Performance profiles instead full sample data]]></title><description><![CDATA[Instead of using the full sample data modules there is a possibility to use the products, categories, customers and orders created by the…]]></description><link>http://dimasch.github.io//m2-fixtures/</link><guid isPermaLink="false">http://dimasch.github.io//m2-fixtures/</guid><pubDate>Sat, 05 Jan 2019 18:30:00 GMT</pubDate><content:encoded>&lt;p&gt;Instead of using the full sample data modules there is a possibility to use the products, categories, customers and orders created by the performance profiles.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 06 Jan 2019 10:53:57 GMT</lastBuildDate><item><title><![CDATA[PWA Studio - installation the Venia theme concept.]]></title><description><![CDATA[In the .env file set the value of   to the   of a running Magento instance. For my case is the  . Then execute: See some validation errors…]]></description><link>http://dimasch.github.io//m2-pwa-venia-install/</link><guid isPermaLink="false">http://dimasch.github.io//m2-pwa-venia-install/</guid><pubDate>Sun, 06 Jan 2019 14:51:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;git clone https://github.com/magento-research/pwa-studio.git
+cd pwa-studio
+npm install
+cp packages/venia-concept/.env.dist packages/venia-concept/.env&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the .env file set the value of &lt;code class=&quot;language-text&quot;&gt;MAGENTO_BACKEND_URL&lt;/code&gt; to the &lt;code class=&quot;language-text&quot;&gt;URL&lt;/code&gt; of a running Magento instance. For my case is the &lt;code class=&quot;language-text&quot;&gt;http://m230.test/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Then execute:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;npm run build&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;See some validation errors:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;Cannot validate queries because the configured Magento backend http://m230.test/ disallows introspection in &amp;quot;production&amp;quot; mode. If you can do so, set this Magento instance to &amp;quot;developer&amp;quot; mode.
+
+The introspection query to http://m230.test/graphql failed with the following errors:
+	- GraphQL introspection is not allowed, but the query contained __schema or __type
+	- Max query depth should be 10 but got 11.
+
+The current default backend for Venia development is:
+
+	https://release-dev-rxvv2iq-zddsyhrdimyra.us-4.magentosite.cloud/
+
+The configured MAGENTO_BACKEND_URL in the current environment is
+
+	http://m230.test/
+
+Consider updating your .env file or environment variables to resolve the reported issues.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Setup the &lt;code class=&quot;language-text&quot;&gt;developer mode&lt;/code&gt; for your magento instance:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;bin/magento deploy:mode:set developer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;/Users/sportmage/workspace/pwa-studio/packages/venia-concept/src/queries/getProductDetail.graphql
+  37:25  error  Cannot query field &amp;quot;fashion_color&amp;quot; on type &amp;quot;SimpleProduct&amp;quot;  graphql/template-strings
+
+/Users/sportmage/workspace/pwa-studio/packages/venia-concept/src/RootComponents/Product/Product.js
+  48:29  error  Cannot query field &amp;quot;fashion_color&amp;quot; on type &amp;quot;SimpleProduct&amp;quot;  graphql/template-strings
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
+  These errors may indicate:
+  -  an out-of-date Magento 2.3 codebase running at &amp;quot;http://m230.test/&amp;quot;
+  -  an out-of-date project codebase whose queries need updating
+
+Use GraphiQL or another schema exploration tool on the Magento store to learn more.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This happens because you’re running against a Magento instance that has no Venia sample data and because the Venia GraphQL queries for product options fashion&lt;em&gt;color and fashion&lt;/em&gt;size are hardcoded.
+Related issue &lt;a href=&quot;https://github.com/magento-research/pwa-studio/issues/626&quot;&gt;https://github.com/magento-research/pwa-studio/issues/626&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For fixed need to install the &lt;code class=&quot;language-text&quot;&gt;Venia sample data&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;chmod +x pwa-studio/packages/venia-concept/deployVeniaSampleData.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then execute the &lt;code class=&quot;language-text&quot;&gt;setup:upgrade&lt;/code&gt; for your magento instance:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;bin/magento setup:upgrade&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Performance profiles instead full sample data]]></title><description><![CDATA[Instead of using the full sample data modules there is a possibility to use the products, categories, customers and orders created by the…]]></description><link>http://dimasch.github.io//m2-fixtures/</link><guid isPermaLink="false">http://dimasch.github.io//m2-fixtures/</guid><pubDate>Sat, 05 Jan 2019 18:30:00 GMT</pubDate><content:encoded>&lt;p&gt;Instead of using the full sample data modules there is a possibility to use the products, categories, customers and orders created by the performance profiles.&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
