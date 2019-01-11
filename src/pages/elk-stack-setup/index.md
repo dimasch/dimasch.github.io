@@ -12,9 +12,13 @@ git clone git@github.com:deviantony/docker-elk.git
 cd docker-elk && docker-compose up --build -d
 ```
 
-After up all `ELK` containers need check `Logstash` status. We will use nodejs script. You can edit the `Logstash` values for `host` and `port` as you need.
+After up all `ELK` containers need check `Logstash` status. Easy way:
 
-Create file `send-message-to-logstash.js` with content:
+```shell
+echo "Hello Logstash!" | nc localhost 5000
+```
+
+In another way will use nodejs script `send-message-to-logstash.js`. You can edit the `Logstash` values for `host` and `port` as you need.
 
 ```js
 /* globals require:true, console:true, process:true */
