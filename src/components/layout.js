@@ -26,7 +26,7 @@ class Layout extends React.Component {
             }}
             to={'/'}
           >
-            Overcharged
+            Supercharged
           </Link>
         </h1>
       )
@@ -47,7 +47,7 @@ class Layout extends React.Component {
             }}
             to={'/'}
           >
-            Overcharged
+            Supercharged
           </Link>
         </h3>
       )

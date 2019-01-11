@@ -1,6 +1,6 @@
 ---
 title: ELK stack setup via udp protocol
-date: "2018-11-10T21:27:01.256Z"
+date: "2019-01-11T12:00:00.256Z"
 ---
 
 In this tutorial we try send to `Logstash` instance a test data via `UDP` protocol. I'm new to this `ELK` (Elastic Logstash Kibana) stack and many new questions for me. The best varinat try in practice.
