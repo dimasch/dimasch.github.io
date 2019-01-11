@@ -72,7 +72,7 @@ Use GraphiQL or another schema exploration tool on the Magento store to learn mo
 ```
 
 This happens because you're running against a Magento instance that has no Venia sample data and because the Venia GraphQL queries for product options `fashion_color` and `fashion_size` are hardcoded.
-Related issue https://github.com/magento-research/pwa-studio/issues/626
+Related [issue](https://github.com/magento-research/pwa-studio/issues/626)
 
 For fixed need to install the `Venia sample data`:
 
@@ -84,4 +84,13 @@ Then execute the `setup:upgrade` for your magento instance:
 
 ```shell
 bin/magento setup:upgrade
+```
+
+Upd:
+And i am have [issue](https://github.com/magento-research/pwa-studio/issues/561) with setup on stage with `Docker`:
+
+For fix need install additionally `envalid` package before `npm run build`:
+
+```shell
+npm install envalid
 ```
