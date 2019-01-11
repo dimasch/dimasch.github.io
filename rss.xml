@@ -1,4 +1,154 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 08 Jan 2019 06:46:12 GMT</lastBuildDate><item><title><![CDATA[PWA Studio - installation the Venia theme concept.]]></title><description><![CDATA[In the .env file set the value of   to the   of a running Magento instance. For my case is the  . Then execute: See some validation errors…]]></description><link>http://dimasch.github.io//m2-pwa-venia-install/</link><guid isPermaLink="false">http://dimasch.github.io//m2-pwa-venia-install/</guid><pubDate>Sun, 06 Jan 2019 14:51:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 11 Jan 2019 09:55:32 GMT</lastBuildDate><item><title><![CDATA[ELK stack setup via udp protocol]]></title><description><![CDATA[In this tutorial we try send to   instance a test data via   protocol. I’m new to this   (Elastic Logstash Kibana) stack and many new…]]></description><link>http://dimasch.github.io//elk-stack-setup/</link><guid isPermaLink="false">http://dimasch.github.io//elk-stack-setup/</guid><pubDate>Fri, 11 Jan 2019 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In this tutorial we try send to &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; instance a test data via &lt;code class=&quot;language-text&quot;&gt;UDP&lt;/code&gt; protocol. I’m new to this &lt;code class=&quot;language-text&quot;&gt;ELK&lt;/code&gt; (Elastic Logstash Kibana) stack and many new questions for me. The best varinat try in practice.&lt;/p&gt;
+&lt;p&gt;In next we we will use the predefined &lt;a href=&quot;https://github.com/deviantony/docker-elk&quot;&gt;ELK&lt;/a&gt; images based on &lt;code class=&quot;language-text&quot;&gt;Docker&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;git clone git@github.com:deviantony/docker-elk.git
+cd docker-elk &amp;amp;&amp;amp; docker-compose up --build -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;After up all &lt;code class=&quot;language-text&quot;&gt;ELK&lt;/code&gt; containers need check &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; status. We will use nodejs script. You can edit the &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; values for &lt;code class=&quot;language-text&quot;&gt;host&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;port&lt;/code&gt; as you need.&lt;/p&gt;
+&lt;p&gt;Create file &lt;code class=&quot;language-text&quot;&gt;send-message-to-logstash.js&lt;/code&gt; with content:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* globals require:true, console:true, process:true */&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// This script will send a message to a [logstash](http://logstash.net/)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// server using the [TCP input](http://logstash.net/docs/1.1.13/inputs/tcp)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// and then quit. If there is no listener, it will just quit.&lt;/span&gt;
+
+&lt;span class=&quot;token string&quot;&gt;&apos;use strict&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; net &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;net&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; logHost &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;127.0.0.1&apos;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; logPort &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5000&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; sender &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;os&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hostname&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; conn &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; net&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createConnection&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; host&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; logHost&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; port&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; logPort &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; message &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;@tags&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;nodejs&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;test&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@message&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;tcp test &apos;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@fields&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;sender&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; sender&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  conn&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;message&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;error&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Execution this script:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;node send-message-to-logstash.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now we can check Elastic indexies and see new &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; index. For this porpose is cool extension &lt;a href=&quot;https://github.com/mobz/elasticsearch-head&quot;&gt;Elastic Head&lt;/a&gt; for Google Chrome.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/ff28e/elastic-logstash-index.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 37.93436293436294%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsSAAALEgHS3X78AAABLklEQVQY032Q60+CYBjF+f//klYfarnWtJWQYzkEK29x9cVQeAH1RbkI+l4CpbW28rezs/N8eLbzPBzP861WU1b6ujUdfai2A+cenM1hEK58CAEA47EKwKtpXOn6ZemmeeE492EYlHDu3IcLf2KvhcHiqWc0X7SHrvrYn326KEKrOEkwwfme5HtW7FntBd3lRSmOMUYpLT3NcrE/6Y2sqRMcDrhIdsrbUB5MvHDNKKEUf4scVcFlWbqJojRN0iybLZaOh2CA4m2MPG9pq7b27poDnCesgrLfcKqmSbLi+QHaoI7UFhVBlAVBapuWZdh6nMRZmpVF2F9wBoDS0AZuGqHtLX/d6NzcPTfKMAVWdygWh4L9z/FmQjEmhNCqF60Lnh5xnp+HnVaqqQ61n+ELluS+zHaAyeEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Logstash index&quot;
+        title=&quot;&quot;
+        src=&quot;/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/fb8a0/elastic-logstash-index.png&quot;
+        srcset=&quot;/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/1a291/elastic-logstash-index.png 148w,
+/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/2bc4a/elastic-logstash-index.png 295w,
+/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/fb8a0/elastic-logstash-index.png 590w,
+/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/526de/elastic-logstash-index.png 885w,
+/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/fa2eb/elastic-logstash-index.png 1180w,
+/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/08f6a/elastic-logstash-index.png 1770w,
+/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/ff28e/elastic-logstash-index.png 2072w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Go to &lt;code class=&quot;language-text&quot;&gt;Kibana&lt;/code&gt; in browser with standard port &lt;code class=&quot;language-text&quot;&gt;http://localhost:5601&lt;/code&gt; and see detected the &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; index:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/8a4c9/kibana-detected-new-index.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 47.9050279329609%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAAA0UlEQVQoz6WQTWvDMAyG/f/P/Tu7j94HY7utLaRuZyW29eGonqekhOUw1sAehJGwXn25U4iQUIRlptbaWvvahts97Z9f35WSv1y7rvPeD8OgquMKC28L6y8Xji+5eyvxQsQxRgCw10ZYi03TFswXZp4THDMZlp2JA/QW5ZyLSHuEVXE4Y3r4jBATjYosJOUPWdFK0yo6ia2VzRGv4Xw6Bn+GlADRtvz1SHZM0RuW8UcspVAP/vAhPVjtes/bOvbUqmqdbRvTwXDB+uPdNuPwH3wD0QlFbwEKp94AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Kibana detected logstash index&quot;
+        title=&quot;&quot;
+        src=&quot;/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/fb8a0/kibana-detected-new-index.png&quot;
+        srcset=&quot;/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/1a291/kibana-detected-new-index.png 148w,
+/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/2bc4a/kibana-detected-new-index.png 295w,
+/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/fb8a0/kibana-detected-new-index.png 590w,
+/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/526de/kibana-detected-new-index.png 885w,
+/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/fa2eb/kibana-detected-new-index.png 1180w,
+/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/08f6a/kibana-detected-new-index.png 1770w,
+/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/8a4c9/kibana-detected-new-index.png 2864w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;After configure &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; index we can use the &lt;code class=&quot;language-text&quot;&gt;Discover&lt;/code&gt; tab for visualize search:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a576fb9911501b49f19deaff30ee8e2d/70380/kibana-discover.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 46.875%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAABRElEQVQoz52QsUoDQRCGtzOxCZJWfA0fRIygVmqpkmgKC0GwE7RRsBdF9BGMWChoEwgEIghKDF6CFqeS3N7O7t3srnN7ORC0EL9i2R3+f2b+ZZObB8XFrZv7J2ttHEcAIKWMHHGGUkpkBJxLELeP3u5lg40v7xSWttcPj/dPzveOzl56r0ZrUpOZupA6dCQ+EFRP24Wg3rlgEwsbY7Nrp7Vrr9tte70QwP7AGENn68NXGr9VNSvOVwtz1Vq9aeNkFKImqdY6NRhHjEi3TjBIzGZY1IhsZGolX6pc1JsmUpQnTYiIEiDs91Frip4sDYD0JRnSaVhuenV0pkKTUclBEFCJ/DQXOH/rPH/6Pg8C4UJzl59zTndSRioamq8aLauR2tPCw0gYWyFMyK3b/1cSc75Uvnto04OS2r+R/gjLlcr/MKd8AdTQ4jMyziXTAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Kibana the Discover tab&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a576fb9911501b49f19deaff30ee8e2d/fb8a0/kibana-discover.png&quot;
+        srcset=&quot;/static/a576fb9911501b49f19deaff30ee8e2d/1a291/kibana-discover.png 148w,
+/static/a576fb9911501b49f19deaff30ee8e2d/2bc4a/kibana-discover.png 295w,
+/static/a576fb9911501b49f19deaff30ee8e2d/fb8a0/kibana-discover.png 590w,
+/static/a576fb9911501b49f19deaff30ee8e2d/526de/kibana-discover.png 885w,
+/static/a576fb9911501b49f19deaff30ee8e2d/fa2eb/kibana-discover.png 1180w,
+/static/a576fb9911501b49f19deaff30ee8e2d/08f6a/kibana-discover.png 1770w,
+/static/a576fb9911501b49f19deaff30ee8e2d/70380/kibana-discover.png 3264w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Next need configure with &lt;code class=&quot;language-text&quot;&gt;UDP&lt;/code&gt; transport plugin &lt;a href=&quot;https://www.elastic.co/guide/en/logstash/current/plugins-inputs-udp.html&quot;&gt;https://www.elastic.co/guide/en/logstash/current/plugins-inputs-udp.html&lt;/a&gt;
+To be continue…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PWA Studio - installation the Venia theme concept.]]></title><description><![CDATA[In the .env file set the value of   to the   of a running Magento instance. For my case is the  . Then execute: See some validation errors…]]></description><link>http://dimasch.github.io//m2-pwa-venia-install/</link><guid isPermaLink="false">http://dimasch.github.io//m2-pwa-venia-install/</guid><pubDate>Sun, 06 Jan 2019 14:51:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/d8d0035195e477529d93999bd9626e37/d47ca/venia-home.png&quot;
