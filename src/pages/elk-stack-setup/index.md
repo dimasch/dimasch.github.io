@@ -15,7 +15,7 @@ cd docker-elk && docker-compose up --build -d
 After up all `ELK` containers need check `Logstash` status. Easy way:
 
 ```shell
-echo "Hello Logstash!" | nc localhost 5000
+echo "Hello Logstash" | nc localhost 5000
 ```
 
 In another way will use nodejs script `send-message-to-logstash.js`. You can edit the `Logstash` values for `host` and `port` as you need.
