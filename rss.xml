@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 11 Jan 2019 11:03:35 GMT</lastBuildDate><item><title><![CDATA[ELK stack setup via udp protocol]]></title><description><![CDATA[In this tutorial we try send to   instance a test data via   protocol. I’m new to this   (Elastic Logstash Kibana) stack and many new…]]></description><link>http://dimasch.github.io//elk-stack-setup/</link><guid isPermaLink="false">http://dimasch.github.io//elk-stack-setup/</guid><pubDate>Fri, 11 Jan 2019 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In this tutorial we try send to &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; instance a test data via &lt;code class=&quot;language-text&quot;&gt;UDP&lt;/code&gt; protocol. I’m new to this &lt;code class=&quot;language-text&quot;&gt;ELK&lt;/code&gt; (Elastic Logstash Kibana) stack and many new questions for me. The best varinat try in practice.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 14 Jan 2019 07:03:51 GMT</lastBuildDate><item><title><![CDATA[ELK stack setup via udp protocol]]></title><description><![CDATA[In this tutorial we try send to   instance a test data via   protocol. I’m new to this   (Elastic Logstash Kibana) stack and many new…]]></description><link>http://dimasch.github.io//elk-stack-setup/</link><guid isPermaLink="false">http://dimasch.github.io//elk-stack-setup/</guid><pubDate>Fri, 11 Jan 2019 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In this tutorial we try send to &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; instance a test data via &lt;code class=&quot;language-text&quot;&gt;UDP&lt;/code&gt; protocol. I’m new to this &lt;code class=&quot;language-text&quot;&gt;ELK&lt;/code&gt; (Elastic Logstash Kibana) stack and many new questions for me. The best varinat try in practice.&lt;/p&gt;
 &lt;p&gt;In next we we will use the predefined &lt;a href=&quot;https://github.com/deviantony/docker-elk&quot;&gt;ELK&lt;/a&gt; images based on &lt;code class=&quot;language-text&quot;&gt;Docker&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;git clone git@github.com:deviantony/docker-elk.git
 cd docker-elk &amp;amp;&amp;amp; docker-compose up --build -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -148,8 +148,89 @@ cd docker-elk &amp;amp;&amp;amp; docker-compose up --build -d&lt;/code&gt;&lt;/p
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;Next need configure with &lt;code class=&quot;language-text&quot;&gt;UDP&lt;/code&gt; transport plugin &lt;a href=&quot;https://www.elastic.co/guide/en/logstash/current/plugins-inputs-udp.html&quot;&gt;https://www.elastic.co/guide/en/logstash/current/plugins-inputs-udp.html&lt;/a&gt;
-To be continue…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PWA Studio - installation the Venia theme concept.]]></title><description><![CDATA[In the .env file set the value of   to the   of a running Magento instance. For my case is the  . Then execute: See some validation errors…]]></description><link>http://dimasch.github.io//m2-pwa-venia-install/</link><guid isPermaLink="false">http://dimasch.github.io//m2-pwa-venia-install/</guid><pubDate>Sun, 06 Jan 2019 14:51:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;h2&gt;Setup UDP transport&lt;/h2&gt;
+&lt;p&gt;For more info &lt;a href=&quot;https://www.elastic.co/guide/en/logstash/current/plugins-inputs-udp.html&quot;&gt;https://www.elastic.co/guide/en/logstash/current/plugins-inputs-udp.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;First step we install the &lt;code class=&quot;language-text&quot;&gt;UDP Plugin&lt;/code&gt; for &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; container - to &lt;code class=&quot;language-text&quot;&gt;logstash/Dockerfile&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;# Added UDP Plugin
+RUN logstash-plugin install logstash-input-udp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Setup the UDP &lt;code class=&quot;language-text&quot;&gt;input&lt;/code&gt; in &lt;code class=&quot;language-text&quot;&gt;logstash/pipeline/logstash.conf&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;input &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	udp &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		port =&gt; &lt;span class=&quot;token number&quot;&gt;5000&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And setup the UDP &lt;code class=&quot;language-text&quot;&gt;port&lt;/code&gt; in &lt;code class=&quot;language-text&quot;&gt;docker-compose.yml&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yml&quot;&gt;&lt;pre class=&quot;language-yml&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;logstash:
+    ...
+    ports:
+      - &amp;quot;5000:5000/udp&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then need rebuild &lt;code class=&quot;language-text&quot;&gt;docker&lt;/code&gt; containers:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;docker-compose up --build -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a0cda23b6b7fa182e4982b94a654b093/93b33/udp-port.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 10.757575757575758%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAIAAADXZGvcAAAACXBIWXMAAAsSAAALEgHS3X78AAAAbElEQVQI1x2NUQ6DIBBEvQksyEoARdyQQthY/Wp6/wt163zNyyRvpnXbiKiUEkKIMc7e7mXPOYcnzjkwxlirARzigigEAFprpdTUWq+1MjMieu9769LHGCISTCm9mb/39TnPFx3yQcc/soriB9n2FTxIsRi/AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;UDP port&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a0cda23b6b7fa182e4982b94a654b093/fb8a0/udp-port.png&quot;
+        srcset=&quot;/static/a0cda23b6b7fa182e4982b94a654b093/1a291/udp-port.png 148w,
+/static/a0cda23b6b7fa182e4982b94a654b093/2bc4a/udp-port.png 295w,
+/static/a0cda23b6b7fa182e4982b94a654b093/fb8a0/udp-port.png 590w,
+/static/a0cda23b6b7fa182e4982b94a654b093/526de/udp-port.png 885w,
+/static/a0cda23b6b7fa182e4982b94a654b093/fa2eb/udp-port.png 1180w,
+/static/a0cda23b6b7fa182e4982b94a654b093/08f6a/udp-port.png 1770w,
+/static/a0cda23b6b7fa182e4982b94a654b093/93b33/udp-port.png 2640w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;For check &lt;code class=&quot;language-text&quot;&gt;UDP&lt;/code&gt; transport we use next &lt;code class=&quot;language-text&quot;&gt;nodejs&lt;/code&gt; script:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* globals require:true, console:true, process:true */&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// This script will send a message to a [logstash](http://logstash.net/)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// server using the [TCP input](http://logstash.net/docs/1.1.13/inputs/tcp)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// and then quit. If there is no listener, it will just quit.&lt;/span&gt;
+
+&lt;span class=&quot;token string&quot;&gt;&apos;use strict&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; udp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;dgram&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; buffer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;buffer&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// creating a client socket&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; client &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; udp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createSocket&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;udp4&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;//buffer msg&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; data &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Buffer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;udpmessage&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;//sending msg&lt;/span&gt;
+client&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;localhost&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    client&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Data sent !!!&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    client&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[PWA Studio - installation the Venia theme concept.]]></title><description><![CDATA[In the .env file set the value of   to the   of a running Magento instance. For my case is the  . Then execute: See some validation errors…]]></description><link>http://dimasch.github.io//m2-pwa-venia-install/</link><guid isPermaLink="false">http://dimasch.github.io//m2-pwa-venia-install/</guid><pubDate>Sun, 06 Jan 2019 14:51:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/d8d0035195e477529d93999bd9626e37/d47ca/venia-home.png&quot;
