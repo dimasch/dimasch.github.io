@@ -18,7 +18,7 @@ After up all `ELK` containers need check `Logstash` status. Easy way:
 echo "Hello Logstash" | nc localhost 5000
 ```
 
-In another way will use nodejs script `send-message-to-logstash.js`. You can edit the `Logstash` values for `host` and `port` as you need.
+In another way will use nodejs script `send-tcp.js`. You can edit the `Logstash` values for `host` and `port` as you need.
 
 ```js
 /* globals require:true, console:true, process:true */
@@ -107,7 +107,7 @@ docker-compose up --build -d
 
 ![UDP port](./udp-port.png)
 
-For check `UDP` transport we use next `nodejs` script:
+For check `UDP` transport we use `send-udp.js` script:
 
 ```js
 /* globals require:true, console:true, process:true */
