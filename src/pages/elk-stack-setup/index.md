@@ -68,5 +68,73 @@ After configure `Logstash` index we can use the `Discover` tab for visualize sea
 
 ![Kibana the Discover tab](./kibana-discover.png)
 
-Next need configure with `UDP` transport plugin https://www.elastic.co/guide/en/logstash/current/plugins-inputs-udp.html
-To be continue...
+
+## Setup UDP transport
+
+For more info https://www.elastic.co/guide/en/logstash/current/plugins-inputs-udp.html
+
+First step we install the `UDP Plugin` for `Logstash` container - to `logstash/Dockerfile`:
+
+```shell
+# Added UDP Plugin
+RUN logstash-plugin install logstash-input-udp
+```
+
+Setup the UDP `input` in `logstash/pipeline/logstash.conf`:
+
+```json
+input {
+	udp {
+		port => 5000
+	}
+}
+```
+
+And setup the UDP `port` in `docker-compose.yml`:
+
+```yml
+logstash:
+    ...
+    ports:
+      - "5000:5000/udp"
+```
+
+Then need rebuild `docker` containers:
+
+```shell
+docker-compose up --build -d
+```
+
+![UDP port](./udp-port.png)
+
+For check `UDP` transport we use next `nodejs` script:
+
+```js
+/* globals require:true, console:true, process:true */
+
+// This script will send a message to a [logstash](http://logstash.net/)
+// server using the [TCP input](http://logstash.net/docs/1.1.13/inputs/tcp)
+// and then quit. If there is no listener, it will just quit.
+
+'use strict';
+
+var udp = require('dgram');
+
+var buffer = require('buffer');
+
+// creating a client socket
+var client = udp.createSocket('udp4');
+
+//buffer msg
+var data = Buffer.from('udpmessage');
+
+//sending msg
+client.send(data, 5000,'localhost',function(error) {
+  if (error) {
+    client.close();
+  } else {
+    console.log('Data sent !!!');
+    client.close();
+  }
+});
+```
