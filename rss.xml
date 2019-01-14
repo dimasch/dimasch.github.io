@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 14 Jan 2019 08:15:34 GMT</lastBuildDate><item><title><![CDATA[ELK stack setup via udp protocol]]></title><description><![CDATA[In this tutorial we try send to   instance a test data via   protocol. I’m new to this   (Elastic Logstash Kibana) stack and many new…]]></description><link>http://dimasch.github.io//elk-stack-setup/</link><guid isPermaLink="false">http://dimasch.github.io//elk-stack-setup/</guid><pubDate>Fri, 11 Jan 2019 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In this tutorial we try send to &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; instance a test data via &lt;code class=&quot;language-text&quot;&gt;UDP&lt;/code&gt; protocol. I’m new to this &lt;code class=&quot;language-text&quot;&gt;ELK&lt;/code&gt; (Elastic Logstash Kibana) stack and many new questions for me. The best varinat try in practice.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 14 Jan 2019 10:09:33 GMT</lastBuildDate><item><title><![CDATA[ELK stack setup via udp protocol]]></title><description><![CDATA[In this tutorial we try send to   instance a test data via   protocol. I’m new to this   (Elastic Logstash Kibana) stack and many new…]]></description><link>http://dimasch.github.io//elk-stack-setup/</link><guid isPermaLink="false">http://dimasch.github.io//elk-stack-setup/</guid><pubDate>Fri, 11 Jan 2019 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In this tutorial we try send to &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; instance a test data via &lt;code class=&quot;language-text&quot;&gt;UDP&lt;/code&gt; protocol. I’m new to this &lt;code class=&quot;language-text&quot;&gt;ELK&lt;/code&gt; (Elastic Logstash Kibana) stack and many new questions for me. The best varinat try in practice.&lt;/p&gt;
 &lt;p&gt;In next we we will use the predefined &lt;a href=&quot;https://github.com/deviantony/docker-elk&quot;&gt;ELK&lt;/a&gt; images based on &lt;code class=&quot;language-text&quot;&gt;Docker&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;git clone git@github.com:deviantony/docker-elk.git
 cd docker-elk &amp;amp;&amp;amp; docker-compose up --build -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -230,7 +230,44 @@ client&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
     console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Data sent !!!&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
     client&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[PWA Studio - installation the Venia theme concept.]]></title><description><![CDATA[In the .env file set the value of   to the   of a running Magento instance. For my case is the  . Then execute: See some validation errors…]]></description><link>http://dimasch.github.io//m2-pwa-venia-install/</link><guid isPermaLink="false">http://dimasch.github.io//m2-pwa-venia-install/</guid><pubDate>Sun, 06 Jan 2019 14:51:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can configure the logstash index (use only one as example, default format &lt;code class=&quot;language-text&quot;&gt;index =&amp;gt; &amp;quot;%{[program]}-%{+YYYY.MM.dd}&amp;quot;&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f467782f21a2fa5d71f8e21a5d1cbc5b/2b1f3/logstash-output.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 37.821482602118%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAcSoQD//xAAWEAADAAAAAAAAAAAAAAAAAAAAARL/2gAIAQEAAQUCtlMpn//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABYQAAMAAAAAAAAAAAAAAAAAAAABMf/aAAgBAQAGPwKsrKz/xAAYEAADAQEAAAAAAAAAAAAAAAAAIfERcf/aAAgBAQABPyFD26Uysf/aAAwDAQACAAMAAAAQc8//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAbEAACAgMBAAAAAAAAAAAAAAAAAREhQXHR8f/aAAgBAQABPxCW1ychxUp7dPen/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;UDP port&quot;
+        title=&quot;&quot;
+        src=&quot;/static/f467782f21a2fa5d71f8e21a5d1cbc5b/f8fb9/logstash-output.jpg&quot;
+        srcset=&quot;/static/f467782f21a2fa5d71f8e21a5d1cbc5b/e8976/logstash-output.jpg 148w,
+/static/f467782f21a2fa5d71f8e21a5d1cbc5b/63df2/logstash-output.jpg 295w,
+/static/f467782f21a2fa5d71f8e21a5d1cbc5b/f8fb9/logstash-output.jpg 590w,
+/static/f467782f21a2fa5d71f8e21a5d1cbc5b/2b1f3/logstash-output.jpg 661w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;index =&amp;gt; &amp;quot;application-%{+YYYY.MM.dd}&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[PWA Studio - installation the Venia theme concept.]]></title><description><![CDATA[In the .env file set the value of   to the   of a running Magento instance. For my case is the  . Then execute: See some validation errors…]]></description><link>http://dimasch.github.io//m2-pwa-venia-install/</link><guid isPermaLink="false">http://dimasch.github.io//m2-pwa-venia-install/</guid><pubDate>Sun, 06 Jan 2019 14:51:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/d8d0035195e477529d93999bd9626e37/d47ca/venia-home.png&quot;
