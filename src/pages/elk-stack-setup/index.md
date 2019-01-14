@@ -53,7 +53,7 @@ var conn = net.createConnection({ host: logHost, port: logPort }, function() {
 Execution this script:
 
 ```shell
-node send-message-to-logstash.js
+node send-tcp.js
 ```
 
 Now we can check Elastic indexies and see new `Logstash` index. For this porpose is cool extension [Elastic Head](https://github.com/mobz/elasticsearch-head) for Google Chrome.
