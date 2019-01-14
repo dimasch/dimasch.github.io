@@ -139,7 +139,7 @@ client.send(data, 5000,'localhost',function(error) {
 });
 ```
 
-You can configure the logstash index (use only one as example, default format `index => "%{[program]}-%{+YYYY.MM.dd}"
+You can configure the `logstash index` created in `ES` (use only one as example, default format `index => "%{[program]}-%{+YYYY.MM.dd}"
 `)
 
 ![UDP port](./logstash-output.jpg)
