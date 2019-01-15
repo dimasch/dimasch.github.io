@@ -1,4 +1,77 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 14 Jan 2019 10:10:57 GMT</lastBuildDate><item><title><![CDATA[ELK stack setup via udp protocol]]></title><description><![CDATA[In this tutorial we try send to   instance a test data via   protocol. I’m new to this   (Elastic Logstash Kibana) stack and many new…]]></description><link>http://dimasch.github.io//elk-stack-setup/</link><guid isPermaLink="false">http://dimasch.github.io//elk-stack-setup/</guid><pubDate>Fri, 11 Jan 2019 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In this tutorial we try send to &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; instance a test data via &lt;code class=&quot;language-text&quot;&gt;UDP&lt;/code&gt; protocol. I’m new to this &lt;code class=&quot;language-text&quot;&gt;ELK&lt;/code&gt; (Elastic Logstash Kibana) stack and many new questions for me. The best varinat try in practice.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 15 Jan 2019 18:33:55 GMT</lastBuildDate><item><title><![CDATA[Add a PWA icon to home screen]]></title><description><![CDATA[Today spent a lot of time to add the   icon to the home screen on iPad (tested on iOS 12.1.1). For my application, for some reason, the…]]></description><link>http://dimasch.github.io//pwa-icon-to-home/</link><guid isPermaLink="false">http://dimasch.github.io//pwa-icon-to-home/</guid><pubDate>Tue, 15 Jan 2019 21:23:01 GMT</pubDate><content:encoded>&lt;p&gt;Today spent a lot of time to add the &lt;code class=&quot;language-text&quot;&gt;PWA&lt;/code&gt; icon to the home screen on iPad (tested on iOS 12.1.1). For my application, for some reason, the standard &lt;code class=&quot;language-text&quot;&gt;PWA&lt;/code&gt; &lt;a href=&quot;https://developers.google.com/web/fundamentals/app-install-banners/&quot;&gt;prompt&lt;/a&gt; was not showed, and i am find how to do it manually:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c8106ec37612101970026dde33adcf14/4f5a6/howto.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 78.85714285714285%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsSAAALEgHS3X78AAADq0lEQVQozw1Qa0/bBhT1b9mvmMT+QZFg0rRVUzcYqkB9gCZt7T7Auo2MUbHSljABDYO1TUR4BBEKhSQQEtvkgfN2Ysdx7PgRP2LHzrNJSBOa5ep8ONK95+icC8iSJAiCoiiVSkXT9UJBkeUCw7BZispkSBxPYxhOECRF0dkslSFJQcrzPE9RFIIgQLvd6Xa77Xa71Wo1Gs1SqVwuV/q7BIpGwtFEAk2niTRB5HJ9QwZD00kfLopioT+KAhQVXpRktajJsiyKfaLn8yLL8pFoDEHCoigRRLp/rWlanhaFnCgwklYsVqoVvVgEer1uu1ltN6q93k3v5mMfnetGo15uqKqfD+wiR5AHisbj/VBlvVyt12sf6uW+tFrr1wSMLm7Fzdt8PIiqYFL34SUopbvjqu1KfQkSLoImc3lG0uVKVyy1Ba2R15qC1lRLLVapA0NPfV++iIyvo3/v4W+d1JEjtu7k5u3s7H7ukZV1JWuX6UqKr+ckiRSUTKFNFq4xqeXnm1e5GjD7n3/BGvrdmjSfYv5QFnR6V+3osoP710ktHxMmUDN6OruRSks+1AW3WqrddDoXXMOQqq8lSsCz19537yD7SfDgNHwCk6B5zfiHYcPNvnGmzSfoZkRboDo72Wa386navGHLpf5r7FjlT49qCSvA6zdHJsvZihV+tY8s2mLDw98szS1se7I750nLaRTJyAGmTEg1jC2mWB1jtVRWwtlSkFDjVBF4bHT8tnpmMHlnN/1my/uhweG5n35+vhebM/tmNzyBlCgXP+TyOilW83qL4TQ6mWUwiucUnFGBr6d3Rwz2b+ediy/ebs0ZHho2jVOTT57bRv+BJ5ZcoYzM5QuH9mO1ep0hKb2gRfxXyGVAzcsXcBAYGJoYGL7/+VePHk88HBz9dWBs4dbIzMwPdwfH5wbGnh5CKK9U0nSe5DWMFgiCw3Eaw2gmJ0VJEbA/u+tYGne9nDhfHD9duu9cune0PGWbH9uaub36ZNS9u4JC9ojLmgL3EecW6tyK76+Hdl+lLmyX7y3Ax7JYV7lqgSlKdFGkShKtC6TE4ByZ4IhIOAh7vW6fD4SgCxCGvJewB4Jg2BvwgzQWAm4+9ZCs4I5nPSjlTmTdsYwzhDuC6CEcOUcSCwdXt41nd1YuvjfBI8aTsTvfTf/4YGrNMbkJyVoV6Ha6XpQ68KH2QNJ2ie6AiW0wuuMJb7uDx3DYfB6ZtvqX905/Wd0xbyxbJm/d++KzB3+Zpvdjml76H2wK5tuqYD4qAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Howto&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c8106ec37612101970026dde33adcf14/fb8a0/howto.png&quot;
+        srcset=&quot;/static/c8106ec37612101970026dde33adcf14/1a291/howto.png 148w,
+/static/c8106ec37612101970026dde33adcf14/2bc4a/howto.png 295w,
+/static/c8106ec37612101970026dde33adcf14/fb8a0/howto.png 590w,
+/static/c8106ec37612101970026dde33adcf14/526de/howto.png 885w,
+/static/c8106ec37612101970026dde33adcf14/fa2eb/howto.png 1180w,
+/static/c8106ec37612101970026dde33adcf14/4f5a6/howto.png 1400w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;And we see the icon on home screen:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/01c8c3993d9e144b71653c010202913e/0823d/result.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgH/xAAXAQADAQAAAAAAAAAAAAAAAAABAwQA/9oADAMBAAIQAxAAAAGTaXulSUANfacrojAw/8QAHBAAAgICAwAAAAAAAAAAAAAAAAECEQMxEBIy/9oACAEBAAEFAotFFEd02dCGNE6pRvjRP1//xAAZEQABBQAAAAAAAAAAAAAAAAAAARARITH/2gAIAQMBAT8BXSyW/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEh/9oACAECAQE/AWIj/8QAGBAAAwEBAAAAAAAAAAAAAAAAASAxECH/2gAIAQEABj8CHGmUJ//EAB4QAQACAQQDAAAAAAAAAAAAAAEAETEQIUFRcYGx/9oACAEBAAE/IaJzMt5lL6FjR0gFgxN5lGByvyV7PYx2E6JfCeOf/9oADAMBAAIAAwAAABA41A3/xAAaEQACAgMAAAAAAAAAAAAAAAAAAREhQWFx/9oACAEDAQE/EJ2QtRQwLh//xAAZEQADAAMAAAAAAAAAAAAAAAAAAREQIVH/2gAIAQIBAT8QUS2Xsh4f/8QAHRABAQACAgMBAAAAAAAAAAAAAREAITFBUWFxof/aAAgBAQABPxC1tZ8T0esVG+4lhlAbfWQB5TxhCEpNTG9D3gVCom+pi5ZVkoMTSnHA/uaFwEPplQtGrvfOOqi0dGf/2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Redis Logo&quot;
+        title=&quot;&quot;
+        src=&quot;/static/01c8c3993d9e144b71653c010202913e/f8fb9/result.jpg&quot;
+        srcset=&quot;/static/01c8c3993d9e144b71653c010202913e/e8976/result.jpg 148w,
+/static/01c8c3993d9e144b71653c010202913e/63df2/result.jpg 295w,
+/static/01c8c3993d9e144b71653c010202913e/f8fb9/result.jpg 590w,
+/static/01c8c3993d9e144b71653c010202913e/85e3d/result.jpg 885w,
+/static/01c8c3993d9e144b71653c010202913e/d1924/result.jpg 1180w,
+/static/01c8c3993d9e144b71653c010202913e/0823d/result.jpg 1668w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[ELK stack setup via udp protocol]]></title><description><![CDATA[In this tutorial we try send to   instance a test data via   protocol. I’m new to this   (Elastic Logstash Kibana) stack and many new…]]></description><link>http://dimasch.github.io//elk-stack-setup/</link><guid isPermaLink="false">http://dimasch.github.io//elk-stack-setup/</guid><pubDate>Fri, 11 Jan 2019 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In this tutorial we try send to &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; instance a test data via &lt;code class=&quot;language-text&quot;&gt;UDP&lt;/code&gt; protocol. I’m new to this &lt;code class=&quot;language-text&quot;&gt;ELK&lt;/code&gt; (Elastic Logstash Kibana) stack and many new questions for me. The best varinat try in practice.&lt;/p&gt;
 &lt;p&gt;In next we we will use the predefined &lt;a href=&quot;https://github.com/deviantony/docker-elk&quot;&gt;ELK&lt;/a&gt; images based on &lt;code class=&quot;language-text&quot;&gt;Docker&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;git clone git@github.com:deviantony/docker-elk.git
 cd docker-elk &amp;amp;&amp;amp; docker-compose up --build -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
