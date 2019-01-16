@@ -9,4 +9,4 @@ Today spent a lot of time to add the `PWA` icon to the home screen on iPad (test
 
 And we see the icon on home screen:
 
-![Redis Logo](./result.jpg)
+![Redis Logo](./result.png)
