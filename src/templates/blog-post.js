@@ -6,6 +6,7 @@ import get from 'lodash/get'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import { rhythm, scale } from '../utils/typography'
+import { DiscussionEmbed } from "disqus-react"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -13,6 +14,8 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
+    const disqusShortname = "dimasch"
+    const disqusConfig = { identifier: post.id, title: post.frontmatter.title }
 
     return (
       <Layout location={this.props.location}>
@@ -66,6 +69,7 @@ class BlogPostTemplate extends React.Component {
             }
           </li>
         </ul>
+        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
       </Layout>
     )
   }
