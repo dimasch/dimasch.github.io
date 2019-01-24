@@ -1,4 +1,147 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Wed, 16 Jan 2019 06:37:06 GMT</lastBuildDate><item><title><![CDATA[Add a PWA icon to home screen]]></title><description><![CDATA[Today spent a lot of time to add the   icon to the home screen on iPad (tested on iOS 12.1.1). For my application, for some reason, the…]]></description><link>http://dimasch.github.io//pwa-icon-to-home/</link><guid isPermaLink="false">http://dimasch.github.io//pwa-icon-to-home/</guid><pubDate>Tue, 15 Jan 2019 21:23:01 GMT</pubDate><content:encoded>&lt;p&gt;Today spent a lot of time to add the &lt;code class=&quot;language-text&quot;&gt;PWA&lt;/code&gt; icon to the home screen on iPad (tested on iOS 12.1.1). For my application, for some reason, the standard &lt;code class=&quot;language-text&quot;&gt;PWA&lt;/code&gt; &lt;a href=&quot;https://developers.google.com/web/fundamentals/app-install-banners/&quot;&gt;prompt&lt;/a&gt; was not showed, and i am find how to do it manually:&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 24 Jan 2019 08:27:38 GMT</lastBuildDate><item><title><![CDATA[Yandex Tank Benchmark setup and Overlod analisis]]></title><description><![CDATA[Sometimes is required to identify the limitations of performance and bottlenecks of an application in order to make the most efficient use…]]></description><link>http://dimasch.github.io//yandex-tank-benchmark/</link><guid isPermaLink="false">http://dimasch.github.io//yandex-tank-benchmark/</guid><pubDate>Thu, 24 Jan 2019 10:28:00 GMT</pubDate><content:encoded>&lt;p&gt;Sometimes is required to identify the limitations of performance and bottlenecks of an application in order to make the most efficient use of its resources. Detect a &lt;code class=&quot;language-text&quot;&gt;memory leaks&lt;/code&gt; for you apps may be critical for production environments. Let’s look at how to identify such moments using &lt;code class=&quot;language-text&quot;&gt;Yandex Tank&lt;/code&gt; benchmark.&lt;/p&gt;
+&lt;h2&gt;Setup&lt;/h2&gt;
+&lt;p&gt;In first we create directory and config file:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;mkdir ~/loadtest &amp;amp;&amp;amp; touch load.yaml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Add next configuration to &lt;code class=&quot;language-text&quot;&gt;load.yaml&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;phantom:
+  address: 192.168.20.117:3000 # [Target&amp;#39;s address]:[target&amp;#39;s port]
+  uris:
+    - /
+  load_profile:
+    load_type: rps # schedule load by defining requests per second
+    schedule: line(1, 10, 10m) # starting from 1rps growing linearly to 10rps during 10 minutes
+console:
+  enabled: true # enable console output
+telegraf:
+  enabled: false # let&amp;#39;s disable telegraf monitoring for the first time&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Important sections &lt;code class=&quot;language-text&quot;&gt;address&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;uris&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;schedule&lt;/code&gt;. For &lt;code class=&quot;language-text&quot;&gt;address&lt;/code&gt; key need setup &lt;code class=&quot;language-text&quot;&gt;host&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;port&lt;/code&gt; for you tested application.&lt;/p&gt;
+&lt;p&gt;Then we can start &lt;code class=&quot;language-text&quot;&gt;Yandex Tank&lt;/code&gt; with using prepared Docker image (if you use macosx - need install &lt;code class=&quot;language-text&quot;&gt;Docker for Mac&lt;/code&gt;)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;docker run -v $(pwd):/var/loadtest -v $SSH_AUTH_SOCK:/ssh-agent -e SSH_AUTH_SOCK=/ssh-agent -v $HOME/.ssh:/root/.ssh --net host -it direvius/yandex-tank&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And see output:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b9a6bb2364ca5623003b30d2c722f06c/875ba/console-output.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 42.43723208818126%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsSAAALEgHS3X78AAABS0lEQVQY021Q2WrDMBD0V8RNHMmHJFuSj/q+ZPmAEPKQD2geS0oo+f8P6NpQKKTDPGjZnZ1ZGdmGKIqapum6blB6nhbVqb7roVRKaa27tsumXN1UpjMZciZYnMbQNdq27fseJqZpqqoqEVEuU058aruH/RvANM2duZNc5nEe+DwIAtd17Q0GGA7DMI7jsiywJUviOk+LJKreY0lJKFaAIAxDPepxUJEQhBCMEcbYAHfwnOf5dDpByKIoIX1ZVWEUaz1er9fL5XI+n0HgeR7nnBKC0KpcxXGSpGmaF0Vd1+v1ea6GoSjLqmk+brevx+P7+fy8333ftywLbcC/MCCTFIIz5joOnLJGZExQGlICR0viJYxGjDqOjV9gSOjxAEa5D7/IoJSMJJ5beU7NSE3c2rNr4niOjV7F1vG4EqHjH1oIH1ai/UZ4YPsf5x+/kVFOVrUgMAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Console output&quot;
+        title=&quot;&quot;
+        src=&quot;/static/b9a6bb2364ca5623003b30d2c722f06c/fb8a0/console-output.png&quot;
+        srcset=&quot;/static/b9a6bb2364ca5623003b30d2c722f06c/1a291/console-output.png 148w,
+/static/b9a6bb2364ca5623003b30d2c722f06c/2bc4a/console-output.png 295w,
+/static/b9a6bb2364ca5623003b30d2c722f06c/fb8a0/console-output.png 590w,
+/static/b9a6bb2364ca5623003b30d2c722f06c/526de/console-output.png 885w,
+/static/b9a6bb2364ca5623003b30d2c722f06c/fa2eb/console-output.png 1180w,
+/static/b9a6bb2364ca5623003b30d2c722f06c/08f6a/console-output.png 1770w,
+/static/b9a6bb2364ca5623003b30d2c722f06c/875ba/console-output.png 3266w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;You can create alias for simplify using (for macosx):&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;echo &amp;quot;alias tank=\&amp;quot;docker run -v $(pwd):/var/loadtest -v $SSH_AUTH_SOCK:/ssh-agent -e SSH_AUTH_SOCK=/ssh-agent -v $HOME/.ssh:/root/.ssh --net host -it direvius/yandex-tank\&amp;quot;&amp;quot; &amp;gt;&amp;gt; ~/.bash_profile &amp;amp;&amp;amp; source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And using one:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;tank&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Visualizing Data&lt;/h2&gt;
+&lt;p&gt;For visualize load metrics out of the box we can setup the &lt;a href=&quot;https://overload.yandex.net/mainpage/guide#install&quot;&gt;Overload Beta&lt;/a&gt; service:&lt;/p&gt;
+&lt;p&gt;Example view of &lt;code class=&quot;language-text&quot;&gt;Quantiles&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1d2623c892938e659dff6e5dc392ee9b/5daa8/overload-quantiles.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 48.634590377113135%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAACGElEQVQoz5VRS2sTYRSd3+PelTtBpO+EhtgWCu5cCb42IqhYsVFpq2kqMUXbpgpKsBoULcUUkqBmIu2kiU0TQl5tE6dJ03l9M/PN9xpn6C/wclbnnnvv4R6ONKu0dUD3G0zu2f9TzLI4bcynX54EPg+KvmAORehpjzICCaTM5RghBCGKEbEsqKhQA3LrEOQEDox6jYlL+lA/fj3v7qOUYWyYoHK0V2wJQoXvdA6gonS77V63jQBApuHItI6oZTOc6vNo4355sA88fwwtaEgSUfVGqxLLhDfyS592oj9rSX6fT9UTeVEASK/3qiZD5ZoAsjzX8wxLfp8y2GcEZ4htO/acxZWT4tvt63Hhxkru9tqf5QgfWt2a+VBYbErVL8WPhU7+c2ZVTCc44B81Jid07zAMPcM2hch11ZAz8ezAesYbFsZf8ncebt56lLj6NHkzWVufS02/K7yJfL9XTqxx2sBF4B0CF86DwAPIpGOt6QyL0tfCjzOl9NlU+VxsxxvdHgn/6n+SHFnZmp5KXLm/eW0qPlbaeM8ZCyG4GDHng9q3OKaSDBqU2oaeU3bv6qWAIgbq7dn6cbD+d7bcntsVY8Lhq1RzKV1cONr7zQGEIMbYtiFz3owtC+kmkFRVBVA1dMtUNUlDwLBUAxz3iK6bso5PVGRhwmzuNBvbOcfcctNywibYDZci5gJTYjFKKEEOHN6CpglNR/wP/6b1RElFBDEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Overload Quantiles&quot;
+        title=&quot;&quot;
+        src=&quot;/static/1d2623c892938e659dff6e5dc392ee9b/fb8a0/overload-quantiles.png&quot;
+        srcset=&quot;/static/1d2623c892938e659dff6e5dc392ee9b/1a291/overload-quantiles.png 148w,
+/static/1d2623c892938e659dff6e5dc392ee9b/2bc4a/overload-quantiles.png 295w,
+/static/1d2623c892938e659dff6e5dc392ee9b/fb8a0/overload-quantiles.png 590w,
+/static/1d2623c892938e659dff6e5dc392ee9b/526de/overload-quantiles.png 885w,
+/static/1d2623c892938e659dff6e5dc392ee9b/fa2eb/overload-quantiles.png 1180w,
+/static/1d2623c892938e659dff6e5dc392ee9b/5daa8/overload-quantiles.png 1538w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Drawdowns towards the end of the test indicate a restart of the PODs, respectively, memory leaks or high consumption, followed by GC (Garbage Collector) cleaning.&lt;/p&gt;
+&lt;h2&gt;Detecting memory leaks for nodejs apps&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Unitech/pm2&quot;&gt;pm2&lt;/a&gt; is best Process Manager with a built-in Load Balancer. We can use &lt;code class=&quot;language-text&quot;&gt;pm2&lt;/code&gt; for monitoring memory using you &lt;code class=&quot;language-text&quot;&gt;nodejs&lt;/code&gt; apps.&lt;/p&gt;
+&lt;p&gt;Usable tips:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;node_modules/pm2/bin/pm2 monit
+node_modules/pm2/bin/pm2 imonit&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Process List&lt;/code&gt; is important section:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0ce027380578a5a9415fdb466efbf208/eb72d/pm2-process-list.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 58.82716049382716%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsSAAALEgHS3X78AAABfElEQVQoz21S0W6EIBDkNy4nCCoiKOKJorlc26d7atL2sf//JR3ZXHNJO9HNijvM7AK7x/eX9Xv1H9f5M41fKdzfRr+nNGUsy4IYM8ZxDCFMDzRNwyZdB62uRgUjBy1dKy523tKW0ppSmucZdaANw9C2LQha6yZDKcUKLgXHK4pCFJwXvJxMty9xulygBuVLBvjYhZRpBXsxKUB8Rjl2YVvTmgEyxFEKjnOue4KUkok/5ND5fV0hCxqkyLPLIBrlR89/yVM3bEuEGshkmwbmvccuPgNJVVX/kL2Z9rSRbfKMamstNNsMYwxiXdeMF+X5fOb8oOHhx8DMFueQh/yrTG3TqOYMDJ7B2u326txQYNBCat0uMaJRtIQ6iEBBZ9AJ5bTFW9WawT2KmqbmWV0pue87FvGJoyF7BKKiVZ4hypIhnk6nAqcsBK2iVVwPVI9DtJ0zGZDCrcDxyKM9frQnBMMPGgYliH3fY0KHz/rQUQ+AqGDE9ZW1lXO17X8AHtVzUomFSmAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Process List&quot;
+        title=&quot;&quot;
+        src=&quot;/static/0ce027380578a5a9415fdb466efbf208/fb8a0/pm2-process-list.png&quot;
+        srcset=&quot;/static/0ce027380578a5a9415fdb466efbf208/1a291/pm2-process-list.png 148w,
+/static/0ce027380578a5a9415fdb466efbf208/2bc4a/pm2-process-list.png 295w,
+/static/0ce027380578a5a9415fdb466efbf208/fb8a0/pm2-process-list.png 590w,
+/static/0ce027380578a5a9415fdb466efbf208/526de/pm2-process-list.png 885w,
+/static/0ce027380578a5a9415fdb466efbf208/fa2eb/pm2-process-list.png 1180w,
+/static/0ce027380578a5a9415fdb466efbf208/08f6a/pm2-process-list.png 1770w,
+/static/0ce027380578a5a9415fdb466efbf208/eb72d/pm2-process-list.png 3240w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Add a PWA icon to home screen]]></title><description><![CDATA[Today spent a lot of time to add the   icon to the home screen on iPad (tested on iOS 12.1.1). For my application, for some reason, the…]]></description><link>http://dimasch.github.io//pwa-icon-to-home/</link><guid isPermaLink="false">http://dimasch.github.io//pwa-icon-to-home/</guid><pubDate>Tue, 15 Jan 2019 21:23:01 GMT</pubDate><content:encoded>&lt;p&gt;Today spent a lot of time to add the &lt;code class=&quot;language-text&quot;&gt;PWA&lt;/code&gt; icon to the home screen on iPad (tested on iOS 12.1.1). For my application, for some reason, the standard &lt;code class=&quot;language-text&quot;&gt;PWA&lt;/code&gt; &lt;a href=&quot;https://developers.google.com/web/fundamentals/app-install-banners/&quot;&gt;prompt&lt;/a&gt; was not showed, and i am find how to do it manually:&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
