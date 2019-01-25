@@ -68,11 +68,17 @@ Drawdowns towards the end of the test indicate a restart of the PODs, respective
 
 [pm2](https://github.com/Unitech/pm2) is best Process Manager with a built-in Load Balancer. We can use `pm2` for monitoring memory using you `nodejs` apps.
 
+Install `pm2` globally:
+
+```shell
+npm install pm2@latest -g
+```
+
 Usable tips:
 
 ```shell
-node_modules/pm2/bin/pm2 monit
-node_modules/pm2/bin/pm2 imonit
+pm2 monit
+pm2 imonit
 ```
 
 `Process List` is important section:
