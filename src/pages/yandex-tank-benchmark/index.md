@@ -5,7 +5,7 @@ date: "2019-01-24T10:28:00.256Z"
 
 Sometimes is required to identify the limitations of performance and bottlenecks of an application in order to make the most efficient use of its resources. Detect a `memory leaks` for you apps may be critical for production environments. Let's look at how to identify such moments using `Yandex Tank` benchmark.
 
-## Setup
+## Setup Yandex Tank
 
 In first we create directory and config file:
 
