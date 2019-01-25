@@ -1,5 +1,5 @@
 ---
-title: Yandex Tank Benchmark setup and Overlod analisis
+title: Yandex Tank Benchmark setup and Detecting memory leaks
 date: "2019-01-24T10:28:00.256Z"
 ---
 
@@ -78,3 +78,9 @@ node_modules/pm2/bin/pm2 imonit
 `Process List` is important section:
 
 ![Process List](./pm2-process-list.png)
+
+### Heapdumps analisis
+
+By `Comparison` option via Chrome Dev Tools you can detect memory delta between heapdumps
+
+![Heapdumps delta](./heapdump-devtools.gif)
