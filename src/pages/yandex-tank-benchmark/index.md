@@ -90,3 +90,17 @@ pm2 imonit
 By `Comparison` option via Chrome Dev Tools you can detect memory delta between heapdumps
 
 ![Heapdumps delta](./heapdump-devtools.gif)
+
+The most important thing is to determine the leak - when analyzing it is most useful to study the closure section, it may contain useful information. Next, in the screenshot, we see a percentage increase `Retained size`:
+
+![Memory Leak Example](.//memory-leak-example.png)
+
+## Autocannon Benchmark
+
+Instead the `Yandex Tank` your can use the [Autocannon](https://github.com/mcollina/autocannon) is fast HTTP/1.1 benchmarking tool written in Node.js
+
+
+```shell
+$ # Send requests to localhost:3000 during 10 seconds
+$ npx autocannon -c 1 -d 10 localhost:3000
+```
