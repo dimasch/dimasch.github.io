@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 25 Jan 2019 11:25:07 GMT</lastBuildDate><item><title><![CDATA[Yandex Tank Benchmark setup and Detecting memory leaks]]></title><description><![CDATA[Sometimes is required to identify the limitations of performance and bottlenecks of an application in order to make the most efficient use…]]></description><link>http://dimasch.github.io//yandex-tank-benchmark/</link><guid isPermaLink="false">http://dimasch.github.io//yandex-tank-benchmark/</guid><pubDate>Thu, 24 Jan 2019 10:28:00 GMT</pubDate><content:encoded>&lt;p&gt;Sometimes is required to identify the limitations of performance and bottlenecks of an application in order to make the most efficient use of its resources. Detect a &lt;code class=&quot;language-text&quot;&gt;memory leaks&lt;/code&gt; for you apps may be critical for production environments. Let’s look at how to identify such moments using &lt;code class=&quot;language-text&quot;&gt;Yandex Tank&lt;/code&gt; benchmark.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 29 Jan 2019 10:38:36 GMT</lastBuildDate><item><title><![CDATA[Yandex Tank Benchmark setup and Detecting memory leaks]]></title><description><![CDATA[Sometimes is required to identify the limitations of performance and bottlenecks of an application in order to make the most efficient use…]]></description><link>http://dimasch.github.io//yandex-tank-benchmark/</link><guid isPermaLink="false">http://dimasch.github.io//yandex-tank-benchmark/</guid><pubDate>Thu, 24 Jan 2019 10:28:00 GMT</pubDate><content:encoded>&lt;p&gt;Sometimes is required to identify the limitations of performance and bottlenecks of an application in order to make the most efficient use of its resources. Detect a &lt;code class=&quot;language-text&quot;&gt;memory leaks&lt;/code&gt; for you apps may be critical for production environments. Let’s look at how to identify such moments using &lt;code class=&quot;language-text&quot;&gt;Yandex Tank&lt;/code&gt; benchmark.&lt;/p&gt;
 &lt;h2&gt;Setup Yandex Tank&lt;/h2&gt;
 &lt;p&gt;In first we create directory and config file:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;mkdir ~/loadtest &amp;amp;&amp;amp; touch load.yaml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -146,7 +146,49 @@ pm2 imonit&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
     &lt;/p&gt;
 &lt;h3&gt;Heapdumps analisis&lt;/h3&gt;
 &lt;p&gt;By &lt;code class=&quot;language-text&quot;&gt;Comparison&lt;/code&gt; option via Chrome Dev Tools you can detect memory delta between heapdumps&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/heapdump-devtools-fe0538e71febd61b669174b0b33861ac.gif&quot; alt=&quot;Heapdumps delta&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Add a PWA icon to home screen]]></title><description><![CDATA[Today spent a lot of time to add the   icon to the home screen on iPad (tested on iOS 12.1.1). For my application, for some reason, the…]]></description><link>http://dimasch.github.io//pwa-icon-to-home/</link><guid isPermaLink="false">http://dimasch.github.io//pwa-icon-to-home/</guid><pubDate>Tue, 15 Jan 2019 21:23:01 GMT</pubDate><content:encoded>&lt;p&gt;Today spent a lot of time to add the &lt;code class=&quot;language-text&quot;&gt;PWA&lt;/code&gt; icon to the home screen on iPad (tested on iOS 12.1.1). For my application, for some reason, the standard &lt;code class=&quot;language-text&quot;&gt;PWA&lt;/code&gt; &lt;a href=&quot;https://developers.google.com/web/fundamentals/app-install-banners/&quot;&gt;prompt&lt;/a&gt; was not showed, and i am find how to do it manually:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/heapdump-devtools-fe0538e71febd61b669174b0b33861ac.gif&quot; alt=&quot;Heapdumps delta&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The most important thing is to determine the leak - when analyzing it is most useful to study the closure section, it may contain useful information. Next, in the screenshot, we see a percentage increase &lt;code class=&quot;language-text&quot;&gt;Retained size&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1f8260d177959efc15098f43e556984c/6effa/memory-leak-example.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 44.600795350260015%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAAA90lEQVQoz4VS7W7DIAzk/R9u0tZNndRprdKkCUnBxnwVSNK5U7Q/S7bTgUDmfGcJUZ1rZ20t1UejLhA+JZ6kaZSrf7Ea6CTx2MGxW3axf99XVXVo4Ons3oZxYb/CV1l2XWa+dOn5EncyC6UUAHpLKdj7/5gfa56nUvggjDEh+H5QvULnA5F13vsQNxi4rgHZDw0JRLTWOuehln3bGaLxG9Ma2DPnwr3ZgNWLOOdUyJJCQA4S+NFWbm6RUooxkjGP2ETEdy6kkFXPobCU8S8xmwNc21aw7Y+YEW3UV+AxtsynkcXZG1wR87Cojdaag205324pxMi/4wtcRATi8HzeCwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Memory Leak Example&quot;
+        title=&quot;&quot;
+        src=&quot;/static/1f8260d177959efc15098f43e556984c/fb8a0/memory-leak-example.png&quot;
+        srcset=&quot;/static/1f8260d177959efc15098f43e556984c/1a291/memory-leak-example.png 148w,
+/static/1f8260d177959efc15098f43e556984c/2bc4a/memory-leak-example.png 295w,
+/static/1f8260d177959efc15098f43e556984c/fb8a0/memory-leak-example.png 590w,
+/static/1f8260d177959efc15098f43e556984c/526de/memory-leak-example.png 885w,
+/static/1f8260d177959efc15098f43e556984c/fa2eb/memory-leak-example.png 1180w,
+/static/1f8260d177959efc15098f43e556984c/08f6a/memory-leak-example.png 1770w,
+/static/1f8260d177959efc15098f43e556984c/6effa/memory-leak-example.png 3269w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h2&gt;Autocannon Benchmark&lt;/h2&gt;
+&lt;p&gt;Instead the &lt;code class=&quot;language-text&quot;&gt;Yandex Tank&lt;/code&gt; your can use the &lt;a href=&quot;https://github.com/mcollina/autocannon&quot;&gt;Autocannon&lt;/a&gt; is fast HTTP/1.1 benchmarking tool written in Node.js&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ # Send requests to localhost:3000 during 10 seconds
+$ npx autocannon -c 1 -d 10 localhost:3000&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Add a PWA icon to home screen]]></title><description><![CDATA[Today spent a lot of time to add the   icon to the home screen on iPad (tested on iOS 12.1.1). For my application, for some reason, the…]]></description><link>http://dimasch.github.io//pwa-icon-to-home/</link><guid isPermaLink="false">http://dimasch.github.io//pwa-icon-to-home/</guid><pubDate>Tue, 15 Jan 2019 21:23:01 GMT</pubDate><content:encoded>&lt;p&gt;Today spent a lot of time to add the &lt;code class=&quot;language-text&quot;&gt;PWA&lt;/code&gt; icon to the home screen on iPad (tested on iOS 12.1.1). For my application, for some reason, the standard &lt;code class=&quot;language-text&quot;&gt;PWA&lt;/code&gt; &lt;a href=&quot;https://developers.google.com/web/fundamentals/app-install-banners/&quot;&gt;prompt&lt;/a&gt; was not showed, and i am find how to do it manually:&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
