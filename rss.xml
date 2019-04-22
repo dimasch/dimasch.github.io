@@ -1,27 +1,179 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 29 Jan 2019 10:38:36 GMT</lastBuildDate><item><title><![CDATA[Yandex Tank Benchmark setup and Detecting memory leaks]]></title><description><![CDATA[Sometimes is required to identify the limitations of performance and bottlenecks of an application in order to make the most efficient use…]]></description><link>http://dimasch.github.io//yandex-tank-benchmark/</link><guid isPermaLink="false">http://dimasch.github.io//yandex-tank-benchmark/</guid><pubDate>Thu, 24 Jan 2019 10:28:00 GMT</pubDate><content:encoded>&lt;p&gt;Sometimes is required to identify the limitations of performance and bottlenecks of an application in order to make the most efficient use of its resources. Detect a &lt;code class=&quot;language-text&quot;&gt;memory leaks&lt;/code&gt; for you apps may be critical for production environments. Let’s look at how to identify such moments using &lt;code class=&quot;language-text&quot;&gt;Yandex Tank&lt;/code&gt; benchmark.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[About web performance and sites with energy low.]]></title><description><![CDATA[Dmitry Schegolihin writes about his front-end experience for platforms Magento2, Vue Storefront and performance optimizations. I help businesses earn more by developing and optimizing web apps.]]></description><link>http://dimasch.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 22 Apr 2019 06:39:27 GMT</lastBuildDate><item><title><![CDATA[Paypal Express configuration for magento2]]></title><description><![CDATA[For get Paypal Express credentionals login to sandbox  https://www.sandbox.paypal.com 
+with your business account. Step 1 Step 2]]></description><link>http://dimasch.github.io//paypal-express-setup/</link><guid isPermaLink="false">http://dimasch.github.io//paypal-express-setup/</guid><pubDate>Mon, 22 Apr 2019 21:27:01 GMT</pubDate><content:encoded>&lt;p&gt;For get Paypal Express credentionals login to sandbox &lt;a href=&quot;https://www.sandbox.paypal.com&quot;&gt;https://www.sandbox.paypal.com&lt;/a&gt;
+with your business account.&lt;/p&gt;
+&lt;h1&gt;Step 1&lt;/h1&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b6c9e6bcb2dffac677ae3069f92fabbb/2fb56/api-access.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75.08333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsSAAALEgHS3X78AAACYUlEQVQoz2VSy2oUQRStzxDNRpGgJEuXroIQgm4EFwqCqDuXfoSgQlAEERRRdOPCn5DEPCGJScwgMWYmPdOPqX7Wq+vZ3p7KqMTD7ab7XM69t84tdPnh50sPPk3f/zh978PU3fdTd95dvP128tabyZuvz994de76y4lrLyauPj8z9+z07PypmacXrjyanH1ydm5+YuYxWtk9Wu/01zrRWidc3QtXvw8glnaCpe1geSdY3g4Wt44Wt3oLG92Fze7Cyo9v653ljV9fN7tf1n4iXqZFGsuaW107o5w1TsvGw5nGqsbppjHNf7BGoyjBe/vdbu8oCAKMcZ4XEEprpRQXgnFOGYDXtRTwSOUhpKKMoxhn+4dBFMdDjIuqYiM456B2WZZVVXHOPQkfngcY23BRo7jX6+zsBgcHOByUUaTkcXUvTrMsz3PoCYy19u/MthG1QiyKqigkcaTK0mQpIxWnFE4O+RJ0WQrvqihqwQ1UdLbVNU5pC0dBjDKM0zYBrDESD2WRO0YtJfmg7+uSJCZJxHACpGPMJJHsdUVRoJKKw7jiUo/sdTxLSYolqTSj5TDBgz7u93mRG84UpYZzK4QhVZ1lghBEuOxnPKfSW1FWJBkO86JsfQKraWsUBBxbG3Mc1ipjpdKoZDLMRUYkl8Y6p7UGGbgGhWBpaZrmWQuw3bs4dtuBsQhWah3M2/5Dc5CB2Jj2VsB6QENG+EN6KON4LdG/FACahGEIMhiBUgrbKorCL7yGyUcwWtdStXs+IfadYaVwH6AhVKnHgJQbA/KgPymGJnEc09Yo5huSMTzp4b9/A2MxNY+bNinPAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Api tab&quot;
+        title=&quot;&quot;
+        src=&quot;/static/b6c9e6bcb2dffac677ae3069f92fabbb/b9e4f/api-access.png&quot;
+        srcset=&quot;/static/b6c9e6bcb2dffac677ae3069f92fabbb/cf440/api-access.png 148w,
+/static/b6c9e6bcb2dffac677ae3069f92fabbb/d2d38/api-access.png 295w,
+/static/b6c9e6bcb2dffac677ae3069f92fabbb/b9e4f/api-access.png 590w,
+/static/b6c9e6bcb2dffac677ae3069f92fabbb/f9b6a/api-access.png 885w,
+/static/b6c9e6bcb2dffac677ae3069f92fabbb/2d849/api-access.png 1180w,
+/static/b6c9e6bcb2dffac677ae3069f92fabbb/bbefa/api-access.png 1770w,
+/static/b6c9e6bcb2dffac677ae3069f92fabbb/2fb56/api-access.png 2400w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h1&gt;Step 2&lt;/h1&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0f702928d398398c5755639635a30ece/e7bac/creds.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 46.327212020033386%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAABeUlEQVQoz41Qy0rDQBTNd/heiAhCdeXSrUVEXAkigiCCgujSTT9CqiiCD0SkiC7c+BUK2jYW26qL5tk8JpnMJE2TTOpNsynahYczZ3FnztxzLzd38DS7/ziz8zC9fZ/ZustsFqY2bifXbybXridWr8ZXLkaWz4aXTocWTwYXjgey+aFsfmwhP754NDp/yJXqYuVL4j+lcl3ka8L7twrkv1T+M6VSrimlmlysSgk/xJTlqvRaaXAt13Ed5BPLJ6AoiiLGYhbHoICuJOj8AYtCTkfkW9AERZM1S9FtSTVkzVR0SzVsoKwhRTOhYlgEYc/E1MTQLaA+o16bo4SYhmFZCNTBNnUpQSZWVdxUQAm2XUrhTRAEUZgiSINARg5O3AOotm3bsS2EqYudju9DpX9sxhLz7ypxfGjo+oHnxS2Pdd3/MsMr3XSERrMh6KLYhMDUdcNkjXEfMwyRBmbd61Y7zBXe9i5fds+fc4UiwkRUYZ2wO5x80DMdGH8AJHXcF+YZYOYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Credentionals&quot;
+        title=&quot;&quot;
+        src=&quot;/static/0f702928d398398c5755639635a30ece/b9e4f/creds.png&quot;
+        srcset=&quot;/static/0f702928d398398c5755639635a30ece/cf440/creds.png 148w,
+/static/0f702928d398398c5755639635a30ece/d2d38/creds.png 295w,
+/static/0f702928d398398c5755639635a30ece/b9e4f/creds.png 590w,
+/static/0f702928d398398c5755639635a30ece/f9b6a/creds.png 885w,
+/static/0f702928d398398c5755639635a30ece/2d849/creds.png 1180w,
+/static/0f702928d398398c5755639635a30ece/bbefa/creds.png 1770w,
+/static/0f702928d398398c5755639635a30ece/e7bac/creds.png 2396w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9d0881b260f0251dc1d738a2c1380471/4117f/merchant-account-id.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 63.0718954248366%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAAB8UlEQVQoz3WSy4rUQBSG8xw6jKCiCI7uZut2aEVwpSAIoog7l/MePaK4EBERFTdufA9ntGemsafTl6QrnVulqpLUNRVPp0NPe/s4hEpV/VX/OXWcG7tft599uf7087Unn7Yef9x69OHqw/dXHry7fP/tpXtvLt59vXnn1ebtlxu3XpztPD+z093Y6Z7r7F24uXe+03UOBrNDd344jnujqOeGvWH44yT4PoBAy9jv+20c+9+OF1+Ig763fzR1eBIwb6AIrou8LlltZF3beok11qj6P1hbORih0VE/cN3Em1KECoyFUqCurCWERlFEKeVCwG9VnYbSVcGVk6R4MJwg34/mAU7TknOl2tsYYzlQFKuZFaCXSjspxr2f7njqBUGQplgIYYxZ7iCEhGFYlsXfnkEsQAwHeyhE8zDDGByulEAcRePJJMZEGfuvnK3DOc+yTOvWmJQyZwwWYJE3KQBCyMXMGmZ5MyvEEBFWtmKlTUap1BrGCcYB+I5CsFBV1bpYG8sl2OYSYZ7m7dk8TWN3SJFfkYyiWTIalRk2jdL+jtbGYaWYxuUsLRhfpCYZxb6nKKnynED9fb+kVBvzp9KAbePAq1ZNOva0OVoIZWEUR3ECtYQn000ubWnANogXVZEtomE1YJRCLUkDiMUa0DbQEb8AZK/H2NYDt6oAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Merchant Account ID&quot;
+        title=&quot;&quot;
+        src=&quot;/static/9d0881b260f0251dc1d738a2c1380471/b9e4f/merchant-account-id.png&quot;
+        srcset=&quot;/static/9d0881b260f0251dc1d738a2c1380471/cf440/merchant-account-id.png 148w,
+/static/9d0881b260f0251dc1d738a2c1380471/d2d38/merchant-account-id.png 295w,
+/static/9d0881b260f0251dc1d738a2c1380471/b9e4f/merchant-account-id.png 590w,
+/static/9d0881b260f0251dc1d738a2c1380471/f9b6a/merchant-account-id.png 885w,
+/static/9d0881b260f0251dc1d738a2c1380471/2d849/merchant-account-id.png 1180w,
+/static/9d0881b260f0251dc1d738a2c1380471/bbefa/merchant-account-id.png 1770w,
+/static/9d0881b260f0251dc1d738a2c1380471/4117f/merchant-account-id.png 2448w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cea1ee25b7ac2e4fc8eff79b2711fe91/b68e1/m2-settings.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 55.894929749541845%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAABj0lEQVQoz31Su07cQBTdz0JCkKwAJUWUCikF/8R/0OQf0tGlTJB2bbZZyHje76edY8PCpsnR1XhmPOee+1p9vTh9+P1rIH+01imlGGPwoeSUUwyxxphxkw6I8+8QS6U/vj/d3a6uLtZ91wXvp2lqbcTa78XDThDln7f3u83PgNcHZillWuCt0YKvLtfnfd9ba3POeFFLCakMwlkXkiU5iHaEcRxfyPhgD+WPXbc1xiilpJTOubGNOAjOU87Tf7H6dDmHzRhfuNIv8WO1Fn6cEEJZJ7TzqUAXduxxVu77Th4AwrSEVEq1WvHnJ0mIFSI714JPRufF+yv55tv1bvc4KxzCXnKacyvO0YE4lCPGVuvYsNTq3Tv5y+crKBMycI7I1Sv5pSohGM40Y2ogig4wLyX0/8l5u93s93tK6bvyAshIIRiFPOGMMuzIkI9zPj896bsNJgQ01AnNnPvRGizHgKKjgfMA4AaFSGk+vpHXH84euw2cotXLPMRWUtU6W2MZ05QGbaKxsGSdYSJq/Ub+C4JfYauWRwmtAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Magento2 setup&quot;
+        title=&quot;&quot;
+        src=&quot;/static/cea1ee25b7ac2e4fc8eff79b2711fe91/b9e4f/m2-settings.png&quot;
+        srcset=&quot;/static/cea1ee25b7ac2e4fc8eff79b2711fe91/cf440/m2-settings.png 148w,
+/static/cea1ee25b7ac2e4fc8eff79b2711fe91/d2d38/m2-settings.png 295w,
+/static/cea1ee25b7ac2e4fc8eff79b2711fe91/b9e4f/m2-settings.png 590w,
+/static/cea1ee25b7ac2e4fc8eff79b2711fe91/f9b6a/m2-settings.png 885w,
+/static/cea1ee25b7ac2e4fc8eff79b2711fe91/2d849/m2-settings.png 1180w,
+/static/cea1ee25b7ac2e4fc8eff79b2711fe91/bbefa/m2-settings.png 1770w,
+/static/cea1ee25b7ac2e4fc8eff79b2711fe91/b68e1/m2-settings.png 3274w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Yandex Tank Benchmark setup and Detecting memory leaks]]></title><description><![CDATA[Sometimes is required to identify the limitations of performance and bottlenecks of an application in order to make the most efficient use…]]></description><link>http://dimasch.github.io//yandex-tank-benchmark/</link><guid isPermaLink="false">http://dimasch.github.io//yandex-tank-benchmark/</guid><pubDate>Thu, 24 Jan 2019 10:28:00 GMT</pubDate><content:encoded>&lt;p&gt;Sometimes is required to identify the limitations of performance and bottlenecks of an application in order to make the most efficient use of its resources. Detect a &lt;code class=&quot;language-text&quot;&gt;memory leaks&lt;/code&gt; for you apps may be critical for production environments. Let’s look at how to identify such moments using &lt;code class=&quot;language-text&quot;&gt;Yandex Tank&lt;/code&gt; benchmark.&lt;/p&gt;
 &lt;h2&gt;Setup Yandex Tank&lt;/h2&gt;
 &lt;p&gt;In first we create directory and config file:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;mkdir ~/loadtest &amp;amp;&amp;amp; touch load.yaml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;mkdir&lt;/span&gt; ~/loadtest &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;touch&lt;/span&gt; load.yaml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Add next configuration to &lt;code class=&quot;language-text&quot;&gt;load.yaml&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;phantom:
-  address: 192.168.20.117:3000 # [Target&amp;#39;s address]:[target&amp;#39;s port]
+  address: 192.168.20.117:3000 &lt;span class=&quot;token comment&quot;&gt;# [Target&apos;s address]:[target&apos;s port]&lt;/span&gt;
   uris:
     - /
   load_profile:
-    load_type: rps # schedule load by defining requests per second
-    schedule: line(1, 10, 10m) # starting from 1rps growing linearly to 10rps during 10 minutes
+    load_type: rps &lt;span class=&quot;token comment&quot;&gt;# schedule load by defining requests per second&lt;/span&gt;
+    schedule: line&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;1, 10, 10m&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# starting from 1rps growing linearly to 10rps during 10 minutes&lt;/span&gt;
 console:
-  enabled: true # enable console output
+  enabled: &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# enable console output&lt;/span&gt;
 telegraf:
-  enabled: false # let&amp;#39;s disable telegraf monitoring for the first time&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  enabled: &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# let&apos;s disable telegraf monitoring for the first time&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Important sections &lt;code class=&quot;language-text&quot;&gt;address&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;uris&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;schedule&lt;/code&gt;. For &lt;code class=&quot;language-text&quot;&gt;address&lt;/code&gt; key need setup &lt;code class=&quot;language-text&quot;&gt;host&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;port&lt;/code&gt; for you tested application.&lt;/p&gt;
 &lt;p&gt;Then we can start &lt;code class=&quot;language-text&quot;&gt;Yandex Tank&lt;/code&gt; with using prepared Docker image (if you use macosx - need install &lt;code class=&quot;language-text&quot;&gt;Docker for Mac&lt;/code&gt;)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;docker run -v $(pwd):/var/loadtest -v $SSH_AUTH_SOCK:/ssh-agent -e SSH_AUTH_SOCK=/ssh-agent -v $HOME/.ssh:/root/.ssh --net host -it direvius/yandex-tank&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;docker run -v &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pwd&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;:/var/loadtest -v &lt;span class=&quot;token variable&quot;&gt;$SSH_AUTH_SOCK&lt;/span&gt;:/ssh-agent -e SSH_AUTH_SOCK&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;/ssh-agent -v &lt;span class=&quot;token variable&quot;&gt;$HOME&lt;/span&gt;/.ssh:/root/.ssh --net &lt;span class=&quot;token function&quot;&gt;host&lt;/span&gt; -it direvius/yandex-tank&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;And see output:&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b9a6bb2364ca5623003b30d2c722f06c/875ba/console-output.png&quot;
+    href=&quot;/static/b9a6bb2364ca5623003b30d2c722f06c/d4f7b/console-output.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -40,14 +192,14 @@ telegraf:
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Console output&quot;
         title=&quot;&quot;
-        src=&quot;/static/b9a6bb2364ca5623003b30d2c722f06c/fb8a0/console-output.png&quot;
-        srcset=&quot;/static/b9a6bb2364ca5623003b30d2c722f06c/1a291/console-output.png 148w,
-/static/b9a6bb2364ca5623003b30d2c722f06c/2bc4a/console-output.png 295w,
-/static/b9a6bb2364ca5623003b30d2c722f06c/fb8a0/console-output.png 590w,
-/static/b9a6bb2364ca5623003b30d2c722f06c/526de/console-output.png 885w,
-/static/b9a6bb2364ca5623003b30d2c722f06c/fa2eb/console-output.png 1180w,
-/static/b9a6bb2364ca5623003b30d2c722f06c/08f6a/console-output.png 1770w,
-/static/b9a6bb2364ca5623003b30d2c722f06c/875ba/console-output.png 3266w&quot;
+        src=&quot;/static/b9a6bb2364ca5623003b30d2c722f06c/b9e4f/console-output.png&quot;
+        srcset=&quot;/static/b9a6bb2364ca5623003b30d2c722f06c/cf440/console-output.png 148w,
+/static/b9a6bb2364ca5623003b30d2c722f06c/d2d38/console-output.png 295w,
+/static/b9a6bb2364ca5623003b30d2c722f06c/b9e4f/console-output.png 590w,
+/static/b9a6bb2364ca5623003b30d2c722f06c/f9b6a/console-output.png 885w,
+/static/b9a6bb2364ca5623003b30d2c722f06c/2d849/console-output.png 1180w,
+/static/b9a6bb2364ca5623003b30d2c722f06c/bbefa/console-output.png 1770w,
+/static/b9a6bb2364ca5623003b30d2c722f06c/d4f7b/console-output.png 3266w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -56,7 +208,7 @@ telegraf:
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;You can create alias for simplify using (for macosx):&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;echo &amp;quot;alias tank=\&amp;quot;docker run -v $(pwd):/var/loadtest -v $SSH_AUTH_SOCK:/ssh-agent -e SSH_AUTH_SOCK=/ssh-agent -v $HOME/.ssh:/root/.ssh --net host -it direvius/yandex-tank\&amp;quot;&amp;quot; &amp;gt;&amp;gt; ~/.bash_profile &amp;amp;&amp;amp; source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;alias tank=\&quot;docker run -v &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pwd&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;:/var/loadtest -v &lt;span class=&quot;token variable&quot;&gt;$SSH_AUTH_SOCK&lt;/span&gt;:/ssh-agent -e SSH_AUTH_SOCK=/ssh-agent -v &lt;span class=&quot;token variable&quot;&gt;$HOME&lt;/span&gt;/.ssh:/root/.ssh --net host -it direvius/yandex-tank\&quot;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&gt;&lt;/span&gt; ~/.bash_profile &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;source&lt;/span&gt; ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;And using one:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;tank&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;Visualizing Data&lt;/h2&gt;
@@ -65,7 +217,7 @@ telegraf:
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1d2623c892938e659dff6e5dc392ee9b/5daa8/overload-quantiles.png&quot;
+    href=&quot;/static/1d2623c892938e659dff6e5dc392ee9b/17a00/overload-quantiles.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -84,13 +236,13 @@ telegraf:
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Overload Quantiles&quot;
         title=&quot;&quot;
-        src=&quot;/static/1d2623c892938e659dff6e5dc392ee9b/fb8a0/overload-quantiles.png&quot;
-        srcset=&quot;/static/1d2623c892938e659dff6e5dc392ee9b/1a291/overload-quantiles.png 148w,
-/static/1d2623c892938e659dff6e5dc392ee9b/2bc4a/overload-quantiles.png 295w,
-/static/1d2623c892938e659dff6e5dc392ee9b/fb8a0/overload-quantiles.png 590w,
-/static/1d2623c892938e659dff6e5dc392ee9b/526de/overload-quantiles.png 885w,
-/static/1d2623c892938e659dff6e5dc392ee9b/fa2eb/overload-quantiles.png 1180w,
-/static/1d2623c892938e659dff6e5dc392ee9b/5daa8/overload-quantiles.png 1538w&quot;
+        src=&quot;/static/1d2623c892938e659dff6e5dc392ee9b/b9e4f/overload-quantiles.png&quot;
+        srcset=&quot;/static/1d2623c892938e659dff6e5dc392ee9b/cf440/overload-quantiles.png 148w,
+/static/1d2623c892938e659dff6e5dc392ee9b/d2d38/overload-quantiles.png 295w,
+/static/1d2623c892938e659dff6e5dc392ee9b/b9e4f/overload-quantiles.png 590w,
+/static/1d2623c892938e659dff6e5dc392ee9b/f9b6a/overload-quantiles.png 885w,
+/static/1d2623c892938e659dff6e5dc392ee9b/2d849/overload-quantiles.png 1180w,
+/static/1d2623c892938e659dff6e5dc392ee9b/17a00/overload-quantiles.png 1538w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -102,7 +254,7 @@ telegraf:
 &lt;h2&gt;Detecting memory leaks for nodejs apps&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/Unitech/pm2&quot;&gt;pm2&lt;/a&gt; is best Process Manager with a built-in Load Balancer. We can use &lt;code class=&quot;language-text&quot;&gt;pm2&lt;/code&gt; for monitoring memory using you &lt;code class=&quot;language-text&quot;&gt;nodejs&lt;/code&gt; apps.&lt;/p&gt;
 &lt;p&gt;Install &lt;code class=&quot;language-text&quot;&gt;pm2&lt;/code&gt; globally:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;npm install pm2@latest -g&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; pm2@latest -g&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Usable tips:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;pm2 monit
 pm2 imonit&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -110,7 +262,7 @@ pm2 imonit&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0ce027380578a5a9415fdb466efbf208/eb72d/pm2-process-list.png&quot;
+    href=&quot;/static/0ce027380578a5a9415fdb466efbf208/0eb29/pm2-process-list.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -129,14 +281,14 @@ pm2 imonit&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Process List&quot;
         title=&quot;&quot;
-        src=&quot;/static/0ce027380578a5a9415fdb466efbf208/fb8a0/pm2-process-list.png&quot;
-        srcset=&quot;/static/0ce027380578a5a9415fdb466efbf208/1a291/pm2-process-list.png 148w,
-/static/0ce027380578a5a9415fdb466efbf208/2bc4a/pm2-process-list.png 295w,
-/static/0ce027380578a5a9415fdb466efbf208/fb8a0/pm2-process-list.png 590w,
-/static/0ce027380578a5a9415fdb466efbf208/526de/pm2-process-list.png 885w,
-/static/0ce027380578a5a9415fdb466efbf208/fa2eb/pm2-process-list.png 1180w,
-/static/0ce027380578a5a9415fdb466efbf208/08f6a/pm2-process-list.png 1770w,
-/static/0ce027380578a5a9415fdb466efbf208/eb72d/pm2-process-list.png 3240w&quot;
+        src=&quot;/static/0ce027380578a5a9415fdb466efbf208/b9e4f/pm2-process-list.png&quot;
+        srcset=&quot;/static/0ce027380578a5a9415fdb466efbf208/cf440/pm2-process-list.png 148w,
+/static/0ce027380578a5a9415fdb466efbf208/d2d38/pm2-process-list.png 295w,
+/static/0ce027380578a5a9415fdb466efbf208/b9e4f/pm2-process-list.png 590w,
+/static/0ce027380578a5a9415fdb466efbf208/f9b6a/pm2-process-list.png 885w,
+/static/0ce027380578a5a9415fdb466efbf208/2d849/pm2-process-list.png 1180w,
+/static/0ce027380578a5a9415fdb466efbf208/bbefa/pm2-process-list.png 1770w,
+/static/0ce027380578a5a9415fdb466efbf208/0eb29/pm2-process-list.png 3240w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -151,7 +303,7 @@ pm2 imonit&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1f8260d177959efc15098f43e556984c/6effa/memory-leak-example.png&quot;
+    href=&quot;/static/1f8260d177959efc15098f43e556984c/72b2b/memory-leak-example.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -170,14 +322,14 @@ pm2 imonit&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Memory Leak Example&quot;
         title=&quot;&quot;
-        src=&quot;/static/1f8260d177959efc15098f43e556984c/fb8a0/memory-leak-example.png&quot;
-        srcset=&quot;/static/1f8260d177959efc15098f43e556984c/1a291/memory-leak-example.png 148w,
-/static/1f8260d177959efc15098f43e556984c/2bc4a/memory-leak-example.png 295w,
-/static/1f8260d177959efc15098f43e556984c/fb8a0/memory-leak-example.png 590w,
-/static/1f8260d177959efc15098f43e556984c/526de/memory-leak-example.png 885w,
-/static/1f8260d177959efc15098f43e556984c/fa2eb/memory-leak-example.png 1180w,
-/static/1f8260d177959efc15098f43e556984c/08f6a/memory-leak-example.png 1770w,
-/static/1f8260d177959efc15098f43e556984c/6effa/memory-leak-example.png 3269w&quot;
+        src=&quot;/static/1f8260d177959efc15098f43e556984c/b9e4f/memory-leak-example.png&quot;
+        srcset=&quot;/static/1f8260d177959efc15098f43e556984c/cf440/memory-leak-example.png 148w,
+/static/1f8260d177959efc15098f43e556984c/d2d38/memory-leak-example.png 295w,
+/static/1f8260d177959efc15098f43e556984c/b9e4f/memory-leak-example.png 590w,
+/static/1f8260d177959efc15098f43e556984c/f9b6a/memory-leak-example.png 885w,
+/static/1f8260d177959efc15098f43e556984c/2d849/memory-leak-example.png 1180w,
+/static/1f8260d177959efc15098f43e556984c/bbefa/memory-leak-example.png 1770w,
+/static/1f8260d177959efc15098f43e556984c/72b2b/memory-leak-example.png 3269w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -187,12 +339,12 @@ pm2 imonit&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
     &lt;/p&gt;
 &lt;h2&gt;Autocannon Benchmark&lt;/h2&gt;
 &lt;p&gt;Instead the &lt;code class=&quot;language-text&quot;&gt;Yandex Tank&lt;/code&gt; your can use the &lt;a href=&quot;https://github.com/mcollina/autocannon&quot;&gt;Autocannon&lt;/a&gt; is fast HTTP/1.1 benchmarking tool written in Node.js&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ # Send requests to localhost:3000 during 10 seconds
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token comment&quot;&gt;# Send requests to localhost:3000 during 10 seconds&lt;/span&gt;
 $ npx autocannon -c 1 -d 10 localhost:3000&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Add a PWA icon to home screen]]></title><description><![CDATA[Today spent a lot of time to add the   icon to the home screen on iPad (tested on iOS 12.1.1). For my application, for some reason, the…]]></description><link>http://dimasch.github.io//pwa-icon-to-home/</link><guid isPermaLink="false">http://dimasch.github.io//pwa-icon-to-home/</guid><pubDate>Tue, 15 Jan 2019 21:23:01 GMT</pubDate><content:encoded>&lt;p&gt;Today spent a lot of time to add the &lt;code class=&quot;language-text&quot;&gt;PWA&lt;/code&gt; icon to the home screen on iPad (tested on iOS 12.1.1). For my application, for some reason, the standard &lt;code class=&quot;language-text&quot;&gt;PWA&lt;/code&gt; &lt;a href=&quot;https://developers.google.com/web/fundamentals/app-install-banners/&quot;&gt;prompt&lt;/a&gt; was not showed, and i am find how to do it manually:&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c8106ec37612101970026dde33adcf14/4f5a6/howto.png&quot;
+    href=&quot;/static/c8106ec37612101970026dde33adcf14/fa92b/howto.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -211,13 +363,13 @@ $ npx autocannon -c 1 -d 10 localhost:3000&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;<
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Howto&quot;
         title=&quot;&quot;
-        src=&quot;/static/c8106ec37612101970026dde33adcf14/fb8a0/howto.png&quot;
-        srcset=&quot;/static/c8106ec37612101970026dde33adcf14/1a291/howto.png 148w,
-/static/c8106ec37612101970026dde33adcf14/2bc4a/howto.png 295w,
-/static/c8106ec37612101970026dde33adcf14/fb8a0/howto.png 590w,
-/static/c8106ec37612101970026dde33adcf14/526de/howto.png 885w,
-/static/c8106ec37612101970026dde33adcf14/fa2eb/howto.png 1180w,
-/static/c8106ec37612101970026dde33adcf14/4f5a6/howto.png 1400w&quot;
+        src=&quot;/static/c8106ec37612101970026dde33adcf14/b9e4f/howto.png&quot;
+        srcset=&quot;/static/c8106ec37612101970026dde33adcf14/cf440/howto.png 148w,
+/static/c8106ec37612101970026dde33adcf14/d2d38/howto.png 295w,
+/static/c8106ec37612101970026dde33adcf14/b9e4f/howto.png 590w,
+/static/c8106ec37612101970026dde33adcf14/f9b6a/howto.png 885w,
+/static/c8106ec37612101970026dde33adcf14/2d849/howto.png 1180w,
+/static/c8106ec37612101970026dde33adcf14/fa92b/howto.png 1400w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -229,7 +381,7 @@ $ npx autocannon -c 1 -d 10 localhost:3000&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;<
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/48759aff5c0877189e8d3fb8060b4555/46685/result.png&quot;
+    href=&quot;/static/48759aff5c0877189e8d3fb8060b4555/9d4f3/result.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -248,13 +400,13 @@ $ npx autocannon -c 1 -d 10 localhost:3000&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;<
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Redis Logo&quot;
         title=&quot;&quot;
-        src=&quot;/static/48759aff5c0877189e8d3fb8060b4555/fb8a0/result.png&quot;
-        srcset=&quot;/static/48759aff5c0877189e8d3fb8060b4555/1a291/result.png 148w,
-/static/48759aff5c0877189e8d3fb8060b4555/2bc4a/result.png 295w,
-/static/48759aff5c0877189e8d3fb8060b4555/fb8a0/result.png 590w,
-/static/48759aff5c0877189e8d3fb8060b4555/526de/result.png 885w,
-/static/48759aff5c0877189e8d3fb8060b4555/fa2eb/result.png 1180w,
-/static/48759aff5c0877189e8d3fb8060b4555/46685/result.png 1398w&quot;
+        src=&quot;/static/48759aff5c0877189e8d3fb8060b4555/b9e4f/result.png&quot;
+        srcset=&quot;/static/48759aff5c0877189e8d3fb8060b4555/cf440/result.png 148w,
+/static/48759aff5c0877189e8d3fb8060b4555/d2d38/result.png 295w,
+/static/48759aff5c0877189e8d3fb8060b4555/b9e4f/result.png 590w,
+/static/48759aff5c0877189e8d3fb8060b4555/f9b6a/result.png 885w,
+/static/48759aff5c0877189e8d3fb8060b4555/2d849/result.png 1180w,
+/static/48759aff5c0877189e8d3fb8060b4555/9d4f3/result.png 1398w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -263,10 +415,10 @@ $ npx autocannon -c 1 -d 10 localhost:3000&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;<
   &lt;/a&gt;
     &lt;/p&gt;</content:encoded></item><item><title><![CDATA[ELK stack setup via udp protocol]]></title><description><![CDATA[In this tutorial we try send to   instance a test data via   protocol. I’m new to this   (Elastic Logstash Kibana) stack and many new…]]></description><link>http://dimasch.github.io//elk-stack-setup/</link><guid isPermaLink="false">http://dimasch.github.io//elk-stack-setup/</guid><pubDate>Fri, 11 Jan 2019 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In this tutorial we try send to &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; instance a test data via &lt;code class=&quot;language-text&quot;&gt;UDP&lt;/code&gt; protocol. I’m new to this &lt;code class=&quot;language-text&quot;&gt;ELK&lt;/code&gt; (Elastic Logstash Kibana) stack and many new questions for me. The best varinat try in practice.&lt;/p&gt;
 &lt;p&gt;In next we we will use the predefined &lt;a href=&quot;https://github.com/deviantony/docker-elk&quot;&gt;ELK&lt;/a&gt; images based on &lt;code class=&quot;language-text&quot;&gt;Docker&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;git clone git@github.com:deviantony/docker-elk.git
-cd docker-elk &amp;amp;&amp;amp; docker-compose up --build -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; clone git@github.com:deviantony/docker-elk.git
+&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; docker-elk &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; docker-compose up --build -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;After up all &lt;code class=&quot;language-text&quot;&gt;ELK&lt;/code&gt; containers need check &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; status. Easy way:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;echo &amp;quot;Hello Logstash&amp;quot; | nc localhost 5000&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hello Logstash&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;nc&lt;/span&gt; localhost 5000&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;In another way will use nodejs script &lt;code class=&quot;language-text&quot;&gt;send-tcp.js&lt;/code&gt;. You can edit the &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; values for &lt;code class=&quot;language-text&quot;&gt;host&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;port&lt;/code&gt; as you need.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* globals require:true, console:true, process:true */&lt;/span&gt;
 
@@ -291,7 +443,7 @@ cd docker-elk &amp;amp;&amp;amp; docker-compose up --build -d&lt;/code&gt;&lt;/p
   conn&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;message&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
   process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;error&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;error&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
   process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -301,7 +453,7 @@ cd docker-elk &amp;amp;&amp;amp; docker-compose up --build -d&lt;/code&gt;&lt;/p
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/ff28e/elastic-logstash-index.png&quot;
+    href=&quot;/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/b0039/elastic-logstash-index.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -320,14 +472,14 @@ cd docker-elk &amp;amp;&amp;amp; docker-compose up --build -d&lt;/code&gt;&lt;/p
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Logstash index&quot;
         title=&quot;&quot;
-        src=&quot;/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/fb8a0/elastic-logstash-index.png&quot;
-        srcset=&quot;/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/1a291/elastic-logstash-index.png 148w,
-/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/2bc4a/elastic-logstash-index.png 295w,
-/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/fb8a0/elastic-logstash-index.png 590w,
-/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/526de/elastic-logstash-index.png 885w,
-/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/fa2eb/elastic-logstash-index.png 1180w,
-/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/08f6a/elastic-logstash-index.png 1770w,
-/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/ff28e/elastic-logstash-index.png 2072w&quot;
+        src=&quot;/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/b9e4f/elastic-logstash-index.png&quot;
+        srcset=&quot;/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/cf440/elastic-logstash-index.png 148w,
+/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/d2d38/elastic-logstash-index.png 295w,
+/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/b9e4f/elastic-logstash-index.png 590w,
+/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/f9b6a/elastic-logstash-index.png 885w,
+/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/2d849/elastic-logstash-index.png 1180w,
+/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/bbefa/elastic-logstash-index.png 1770w,
+/static/42e6b4c45a0d5a9cdcdd5efc81aaac9e/b0039/elastic-logstash-index.png 2072w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -339,7 +491,7 @@ cd docker-elk &amp;amp;&amp;amp; docker-compose up --build -d&lt;/code&gt;&lt;/p
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/8a4c9/kibana-detected-new-index.png&quot;
+    href=&quot;/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/93eac/kibana-detected-new-index.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -358,14 +510,14 @@ cd docker-elk &amp;amp;&amp;amp; docker-compose up --build -d&lt;/code&gt;&lt;/p
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Kibana detected logstash index&quot;
         title=&quot;&quot;
-        src=&quot;/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/fb8a0/kibana-detected-new-index.png&quot;
-        srcset=&quot;/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/1a291/kibana-detected-new-index.png 148w,
-/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/2bc4a/kibana-detected-new-index.png 295w,
-/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/fb8a0/kibana-detected-new-index.png 590w,
-/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/526de/kibana-detected-new-index.png 885w,
-/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/fa2eb/kibana-detected-new-index.png 1180w,
-/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/08f6a/kibana-detected-new-index.png 1770w,
-/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/8a4c9/kibana-detected-new-index.png 2864w&quot;
+        src=&quot;/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/b9e4f/kibana-detected-new-index.png&quot;
+        srcset=&quot;/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/cf440/kibana-detected-new-index.png 148w,
+/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/d2d38/kibana-detected-new-index.png 295w,
+/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/b9e4f/kibana-detected-new-index.png 590w,
+/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/f9b6a/kibana-detected-new-index.png 885w,
+/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/2d849/kibana-detected-new-index.png 1180w,
+/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/bbefa/kibana-detected-new-index.png 1770w,
+/static/6e6fd7c12ac4821ced4e6b0b2fab47b6/93eac/kibana-detected-new-index.png 2864w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -377,7 +529,7 @@ cd docker-elk &amp;amp;&amp;amp; docker-compose up --build -d&lt;/code&gt;&lt;/p
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a576fb9911501b49f19deaff30ee8e2d/70380/kibana-discover.png&quot;
+    href=&quot;/static/a576fb9911501b49f19deaff30ee8e2d/126ab/kibana-discover.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -396,14 +548,14 @@ cd docker-elk &amp;amp;&amp;amp; docker-compose up --build -d&lt;/code&gt;&lt;/p
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Kibana the Discover tab&quot;
         title=&quot;&quot;
-        src=&quot;/static/a576fb9911501b49f19deaff30ee8e2d/fb8a0/kibana-discover.png&quot;
-        srcset=&quot;/static/a576fb9911501b49f19deaff30ee8e2d/1a291/kibana-discover.png 148w,
-/static/a576fb9911501b49f19deaff30ee8e2d/2bc4a/kibana-discover.png 295w,
-/static/a576fb9911501b49f19deaff30ee8e2d/fb8a0/kibana-discover.png 590w,
-/static/a576fb9911501b49f19deaff30ee8e2d/526de/kibana-discover.png 885w,
-/static/a576fb9911501b49f19deaff30ee8e2d/fa2eb/kibana-discover.png 1180w,
-/static/a576fb9911501b49f19deaff30ee8e2d/08f6a/kibana-discover.png 1770w,
-/static/a576fb9911501b49f19deaff30ee8e2d/70380/kibana-discover.png 3264w&quot;
+        src=&quot;/static/a576fb9911501b49f19deaff30ee8e2d/b9e4f/kibana-discover.png&quot;
+        srcset=&quot;/static/a576fb9911501b49f19deaff30ee8e2d/cf440/kibana-discover.png 148w,
+/static/a576fb9911501b49f19deaff30ee8e2d/d2d38/kibana-discover.png 295w,
+/static/a576fb9911501b49f19deaff30ee8e2d/b9e4f/kibana-discover.png 590w,
+/static/a576fb9911501b49f19deaff30ee8e2d/f9b6a/kibana-discover.png 885w,
+/static/a576fb9911501b49f19deaff30ee8e2d/2d849/kibana-discover.png 1180w,
+/static/a576fb9911501b49f19deaff30ee8e2d/bbefa/kibana-discover.png 1770w,
+/static/a576fb9911501b49f19deaff30ee8e2d/126ab/kibana-discover.png 3264w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -414,8 +566,8 @@ cd docker-elk &amp;amp;&amp;amp; docker-compose up --build -d&lt;/code&gt;&lt;/p
 &lt;h2&gt;Setup UDP transport&lt;/h2&gt;
 &lt;p&gt;For more info &lt;a href=&quot;https://www.elastic.co/guide/en/logstash/current/plugins-inputs-udp.html&quot;&gt;https://www.elastic.co/guide/en/logstash/current/plugins-inputs-udp.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;First step we install the &lt;code class=&quot;language-text&quot;&gt;UDP Plugin&lt;/code&gt; for &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; container - to &lt;code class=&quot;language-text&quot;&gt;logstash/Dockerfile&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;# Added UDP Plugin
-RUN logstash-plugin install logstash-input-udp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# Added UDP Plugin&lt;/span&gt;
+RUN logstash-plugin &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; logstash-input-udp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Setup the UDP &lt;code class=&quot;language-text&quot;&gt;input&lt;/code&gt; in &lt;code class=&quot;language-text&quot;&gt;logstash/pipeline/logstash.conf&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;input &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 	udp &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -423,16 +575,16 @@ RUN logstash-plugin install logstash-input-udp&lt;/code&gt;&lt;/pre&gt;&lt;/div&
 	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;And setup the UDP &lt;code class=&quot;language-text&quot;&gt;port&lt;/code&gt; in &lt;code class=&quot;language-text&quot;&gt;docker-compose.yml&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yml&quot;&gt;&lt;pre class=&quot;language-yml&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;logstash:
-    ...
-    ports:
-      - &amp;quot;5000:5000/udp&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yml&quot;&gt;&lt;pre class=&quot;language-yml&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;logstash&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;...&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;5000:5000/udp&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Then need rebuild &lt;code class=&quot;language-text&quot;&gt;docker&lt;/code&gt; containers:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;docker-compose up --build -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a0cda23b6b7fa182e4982b94a654b093/93b33/udp-port.png&quot;
+    href=&quot;/static/a0cda23b6b7fa182e4982b94a654b093/ea294/udp-port.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -451,14 +603,14 @@ RUN logstash-plugin install logstash-input-udp&lt;/code&gt;&lt;/pre&gt;&lt;/div&
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;UDP port&quot;
         title=&quot;&quot;
-        src=&quot;/static/a0cda23b6b7fa182e4982b94a654b093/fb8a0/udp-port.png&quot;
-        srcset=&quot;/static/a0cda23b6b7fa182e4982b94a654b093/1a291/udp-port.png 148w,
-/static/a0cda23b6b7fa182e4982b94a654b093/2bc4a/udp-port.png 295w,
-/static/a0cda23b6b7fa182e4982b94a654b093/fb8a0/udp-port.png 590w,
-/static/a0cda23b6b7fa182e4982b94a654b093/526de/udp-port.png 885w,
-/static/a0cda23b6b7fa182e4982b94a654b093/fa2eb/udp-port.png 1180w,
-/static/a0cda23b6b7fa182e4982b94a654b093/08f6a/udp-port.png 1770w,
-/static/a0cda23b6b7fa182e4982b94a654b093/93b33/udp-port.png 2640w&quot;
+        src=&quot;/static/a0cda23b6b7fa182e4982b94a654b093/b9e4f/udp-port.png&quot;
+        srcset=&quot;/static/a0cda23b6b7fa182e4982b94a654b093/cf440/udp-port.png 148w,
+/static/a0cda23b6b7fa182e4982b94a654b093/d2d38/udp-port.png 295w,
+/static/a0cda23b6b7fa182e4982b94a654b093/b9e4f/udp-port.png 590w,
+/static/a0cda23b6b7fa182e4982b94a654b093/f9b6a/udp-port.png 885w,
+/static/a0cda23b6b7fa182e4982b94a654b093/2d849/udp-port.png 1180w,
+/static/a0cda23b6b7fa182e4982b94a654b093/bbefa/udp-port.png 1770w,
+/static/a0cda23b6b7fa182e4982b94a654b093/ea294/udp-port.png 2640w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -483,10 +635,10 @@ RUN logstash-plugin install logstash-input-udp&lt;/code&gt;&lt;/pre&gt;&lt;/div&
 &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; client &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; udp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createSocket&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;udp4&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;token comment&quot;&gt;//buffer msg&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; data &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Buffer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;udpmessage&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; data &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Buffer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;udpmessage&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;token comment&quot;&gt;//sending msg&lt;/span&gt;
-client&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;localhost&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+client&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;localhost&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     client&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -498,7 +650,7 @@ client&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f467782f21a2fa5d71f8e21a5d1cbc5b/2b1f3/logstash-output.jpg&quot;
+    href=&quot;/static/f467782f21a2fa5d71f8e21a5d1cbc5b/3f0e4/logstash-output.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -517,11 +669,11 @@ client&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;UDP port&quot;
         title=&quot;&quot;
-        src=&quot;/static/f467782f21a2fa5d71f8e21a5d1cbc5b/f8fb9/logstash-output.jpg&quot;
-        srcset=&quot;/static/f467782f21a2fa5d71f8e21a5d1cbc5b/e8976/logstash-output.jpg 148w,
-/static/f467782f21a2fa5d71f8e21a5d1cbc5b/63df2/logstash-output.jpg 295w,
-/static/f467782f21a2fa5d71f8e21a5d1cbc5b/f8fb9/logstash-output.jpg 590w,
-/static/f467782f21a2fa5d71f8e21a5d1cbc5b/2b1f3/logstash-output.jpg 661w&quot;
+        src=&quot;/static/f467782f21a2fa5d71f8e21a5d1cbc5b/c739e/logstash-output.jpg&quot;
+        srcset=&quot;/static/f467782f21a2fa5d71f8e21a5d1cbc5b/8ee9c/logstash-output.jpg 148w,
+/static/f467782f21a2fa5d71f8e21a5d1cbc5b/ebbe7/logstash-output.jpg 295w,
+/static/f467782f21a2fa5d71f8e21a5d1cbc5b/c739e/logstash-output.jpg 590w,
+/static/f467782f21a2fa5d71f8e21a5d1cbc5b/3f0e4/logstash-output.jpg 661w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -530,10 +682,10 @@ client&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;For example:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;index =&amp;gt; &amp;quot;application-%{+YYYY.MM.dd}&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[PWA Studio - installation the Venia theme concept.]]></title><description><![CDATA[In the .env file set the value of   to the   of a running Magento instance. For my case is the  . Then execute: See some validation errors…]]></description><link>http://dimasch.github.io//m2-pwa-venia-install/</link><guid isPermaLink="false">http://dimasch.github.io//m2-pwa-venia-install/</guid><pubDate>Sun, 06 Jan 2019 14:51:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;index &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;application-%{+YYYY.MM.dd}&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[PWA Studio - installation the Venia theme concept.]]></title><description><![CDATA[In the .env file set the value of   to the   of a running Magento instance. For my case is the  . Then execute: See some validation errors…]]></description><link>http://dimasch.github.io//m2-pwa-venia-install/</link><guid isPermaLink="false">http://dimasch.github.io//m2-pwa-venia-install/</guid><pubDate>Sun, 06 Jan 2019 14:51:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d8d0035195e477529d93999bd9626e37/d47ca/venia-home.png&quot;
+    href=&quot;/static/d8d0035195e477529d93999bd9626e37/35c67/venia-home.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -552,11 +704,11 @@ client&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Venia Home&quot;
         title=&quot;&quot;
-        src=&quot;/static/d8d0035195e477529d93999bd9626e37/fb8a0/venia-home.png&quot;
-        srcset=&quot;/static/d8d0035195e477529d93999bd9626e37/1a291/venia-home.png 148w,
-/static/d8d0035195e477529d93999bd9626e37/2bc4a/venia-home.png 295w,
-/static/d8d0035195e477529d93999bd9626e37/fb8a0/venia-home.png 590w,
-/static/d8d0035195e477529d93999bd9626e37/d47ca/venia-home.png 750w&quot;
+        src=&quot;/static/d8d0035195e477529d93999bd9626e37/b9e4f/venia-home.png&quot;
+        srcset=&quot;/static/d8d0035195e477529d93999bd9626e37/cf440/venia-home.png 148w,
+/static/d8d0035195e477529d93999bd9626e37/d2d38/venia-home.png 295w,
+/static/d8d0035195e477529d93999bd9626e37/b9e4f/venia-home.png 590w,
+/static/d8d0035195e477529d93999bd9626e37/35c67/venia-home.png 750w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -564,62 +716,62 @@ client&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;git clone https://github.com/magento-research/pwa-studio.git
-cd pwa-studio
-npm install
-cp packages/venia-concept/.env.dist packages/venia-concept/.env&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; clone https://github.com/magento-research/pwa-studio.git
+&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; pwa-studio
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;cp&lt;/span&gt; packages/venia-concept/.env.dist packages/venia-concept/.env&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;In the .env file set the value of &lt;code class=&quot;language-text&quot;&gt;MAGENTO_BACKEND_URL&lt;/code&gt; to the &lt;code class=&quot;language-text&quot;&gt;URL&lt;/code&gt; of a running Magento instance. For my case is the &lt;code class=&quot;language-text&quot;&gt;http://m230.test/&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Then execute:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;npm run build&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run build&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;See some validation errors:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;Cannot validate queries because the configured Magento backend http://m230.test/ disallows introspection in &amp;quot;production&amp;quot; mode. If you can do so, set this Magento instance to &amp;quot;developer&amp;quot; mode.
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;Cannot validate queries because the configured Magento backend http://m230.test/ disallows introspection &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;production&quot;&lt;/span&gt; mode. If you can &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt; so, &lt;span class=&quot;token keyword&quot;&gt;set&lt;/span&gt; this Magento instance to &lt;span class=&quot;token string&quot;&gt;&quot;developer&quot;&lt;/span&gt; mode.
 
 The introspection query to http://m230.test/graphql failed with the following errors:
 	- GraphQL introspection is not allowed, but the query contained __schema or __type
 	- Max query depth should be 10 but got 11.
 
-The current default backend for Venia development is:
+The current default backend &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; Venia development is:
 
 	https://release-dev-rxvv2iq-zddsyhrdimyra.us-4.magentosite.cloud/
 
-The configured MAGENTO_BACKEND_URL in the current environment is
+The configured MAGENTO_BACKEND_URL &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; the current environment is
 
 	http://m230.test/
 
-Consider updating your .env file or environment variables to resolve the reported issues.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+Consider updating your .env &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt; or environment variables to resolve the reported issues.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Setup the &lt;code class=&quot;language-text&quot;&gt;developer mode&lt;/code&gt; for your magento instance:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;bin/magento deploy:mode:set developer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;After setup the &lt;code class=&quot;language-text&quot;&gt;developer&lt;/code&gt; mode we try to again execute build:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;npm run build&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run build&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;See another errors:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;/Users/sportmage/workspace/pwa-studio/packages/venia-concept/src/queries/getProductDetail.graphql
-  37:25  error  Cannot query field &amp;quot;fashion_color&amp;quot; on type &amp;quot;SimpleProduct&amp;quot;  graphql/template-strings
+  37:25  error  Cannot query field &lt;span class=&quot;token string&quot;&gt;&quot;fashion_color&quot;&lt;/span&gt; on &lt;span class=&quot;token function&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;SimpleProduct&quot;&lt;/span&gt;  graphql/template-strings
 
 /Users/sportmage/workspace/pwa-studio/packages/venia-concept/src/RootComponents/Product/Product.js
-  48:29  error  Cannot query field &amp;quot;fashion_color&amp;quot; on type &amp;quot;SimpleProduct&amp;quot;  graphql/template-strings
+  48:29  error  Cannot query field &lt;span class=&quot;token string&quot;&gt;&quot;fashion_color&quot;&lt;/span&gt; on &lt;span class=&quot;token function&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;SimpleProduct&quot;&lt;/span&gt;  graphql/template-strings
 
-✖ 2 problems (2 errors, 0 warnings)
+✖ 2 problems &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;2 errors, 0 warnings&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
 
   These errors may indicate:
-  -  an out-of-date Magento 2.3 codebase running at &amp;quot;http://m230.test/&amp;quot;
+  -  an out-of-date Magento 2.3 codebase running at &lt;span class=&quot;token string&quot;&gt;&quot;http://m230.test/&quot;&lt;/span&gt;
   -  an out-of-date project codebase whose queries need updating
 
 Use GraphiQL or another schema exploration tool on the Magento store to learn more.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This happens because you’re running against a Magento instance that has no Venia sample data and because the Venia GraphQL queries for product options &lt;code class=&quot;language-text&quot;&gt;fashion_color&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;fashion_size&lt;/code&gt; are hardcoded.
 Related &lt;a href=&quot;https://github.com/magento-research/pwa-studio/issues/626&quot;&gt;issue&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;For fixed need to install the &lt;code class=&quot;language-text&quot;&gt;Venia sample data&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;chmod +x pwa-studio/packages/venia-concept/deployVeniaSampleData.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;chmod&lt;/span&gt; +x pwa-studio/packages/venia-concept/deployVeniaSampleData.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Then execute the &lt;code class=&quot;language-text&quot;&gt;setup:upgrade&lt;/code&gt; for your magento instance:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;bin/magento setup:upgrade&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Upd:
 And i am have &lt;a href=&quot;https://github.com/magento-research/pwa-studio/issues/561&quot;&gt;issue&lt;/a&gt; with setup on stage with &lt;code class=&quot;language-text&quot;&gt;Docker&lt;/code&gt;:&lt;/p&gt;
 &lt;p&gt;For fix need install additionally &lt;code class=&quot;language-text&quot;&gt;envalid&lt;/code&gt; package before &lt;code class=&quot;language-text&quot;&gt;npm run build&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;npm install envalid&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Performance profiles instead full sample data]]></title><description><![CDATA[Instead of using the full sample data modules there is a possibility to use the products, categories, customers and orders created by the…]]></description><link>http://dimasch.github.io//m2-fixtures/</link><guid isPermaLink="false">http://dimasch.github.io//m2-fixtures/</guid><pubDate>Sat, 05 Jan 2019 18:30:00 GMT</pubDate><content:encoded>&lt;p&gt;Instead of using the full sample data modules there is a possibility to use the products, categories, customers and orders created by the performance profiles.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; envalid&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Performance profiles instead full sample data]]></title><description><![CDATA[Instead of using the full sample data modules there is a possibility to use the products, categories, customers and orders created by the…]]></description><link>http://dimasch.github.io//m2-fixtures/</link><guid isPermaLink="false">http://dimasch.github.io//m2-fixtures/</guid><pubDate>Sat, 05 Jan 2019 18:30:00 GMT</pubDate><content:encoded>&lt;p&gt;Instead of using the full sample data modules there is a possibility to use the products, categories, customers and orders created by the performance profiles.&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f5743fe39759431a5eff5326dd19a1b9/23410/fixtures.png&quot;
+    href=&quot;/static/f5743fe39759431a5eff5326dd19a1b9/570aa/fixtures.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -638,14 +790,14 @@ And i am have &lt;a href=&quot;https://github.com/magento-research/pwa-studio/is
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Fixtures&quot;
         title=&quot;&quot;
-        src=&quot;/static/f5743fe39759431a5eff5326dd19a1b9/fb8a0/fixtures.png&quot;
-        srcset=&quot;/static/f5743fe39759431a5eff5326dd19a1b9/1a291/fixtures.png 148w,
-/static/f5743fe39759431a5eff5326dd19a1b9/2bc4a/fixtures.png 295w,
-/static/f5743fe39759431a5eff5326dd19a1b9/fb8a0/fixtures.png 590w,
-/static/f5743fe39759431a5eff5326dd19a1b9/526de/fixtures.png 885w,
-/static/f5743fe39759431a5eff5326dd19a1b9/fa2eb/fixtures.png 1180w,
-/static/f5743fe39759431a5eff5326dd19a1b9/08f6a/fixtures.png 1770w,
-/static/f5743fe39759431a5eff5326dd19a1b9/23410/fixtures.png 2224w&quot;
+        src=&quot;/static/f5743fe39759431a5eff5326dd19a1b9/b9e4f/fixtures.png&quot;
+        srcset=&quot;/static/f5743fe39759431a5eff5326dd19a1b9/cf440/fixtures.png 148w,
+/static/f5743fe39759431a5eff5326dd19a1b9/d2d38/fixtures.png 295w,
+/static/f5743fe39759431a5eff5326dd19a1b9/b9e4f/fixtures.png 590w,
+/static/f5743fe39759431a5eff5326dd19a1b9/f9b6a/fixtures.png 885w,
+/static/f5743fe39759431a5eff5326dd19a1b9/2d849/fixtures.png 1180w,
+/static/f5743fe39759431a5eff5326dd19a1b9/bbefa/fixtures.png 1770w,
+/static/f5743fe39759431a5eff5326dd19a1b9/570aa/fixtures.png 2224w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -658,41 +810,41 @@ And i am have &lt;a href=&quot;https://github.com/magento-research/pwa-studio/is
 &lt;p&gt;Example working output:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;sportmage@MacBook-Pro m230 $ bin/magento setup:performance:generate-fixtures setup/performance-toolkit/profiles/ce/small.xml
 Generating profile with following params:
- |- Admin Users: 50
- |- Websites: 1
- |- Store Groups Count: 1
- |- Store Views Count: 1
- |- Categories: 30
- |- Attribute Sets (Default): 3
- |- Attribute Sets (Extra): 10
- |- Simple products: 800
- |- Configurable products: 16
- |- Product images: 100, 3 per product
- |- Customers: 200
- |- Cart Price Rules: 20
- |- Catalog Price Rules: 20
- |- Orders: 80
-Config Changes...  done in 00:00:00
-Generating admin users...  done in 00:00:00
-Generating websites, stores and store views...  done in 00:00:00
-Generating categories...  done in 00:00:01
-Generating attribute sets...  done in 00:00:02
-Generating simple products...  done in 00:00:03
-Generating configurable EAV variations...  done in 00:00:00
-Generating bundle products...  done in 00:00:00
-Generating configurable products...  done in 00:00:01
-Generating images...  done in 00:00:01
-Generating customer groups...  done in 00:00:00
-Generating customers...  done in 00:00:02
-Generating cart price rules...  done in 00:00:00
-Generating catalog price rules...  done in 00:00:00
-Generating tax rates...  done in 00:00:00
-Generating tax rules...  done in 00:00:00
-Generating orders...  done in 00:00:00
-Indexers Mode Changes...  done in 00:00:00&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Development the Paypal Module for Vue Storefront]]></title><description><![CDATA[The  Develo vlog  has the article aboute development modules for Vue Storefront project. This may help in the development of new modules.]]></description><link>http://dimasch.github.io//vsf-paypal-module/</link><guid isPermaLink="false">http://dimasch.github.io//vsf-paypal-module/</guid><pubDate>Sun, 16 Dec 2018 09:30:00 GMT</pubDate><content:encoded>&lt;p&gt;The &lt;a href=&quot;https://www.develodesign.co.uk/news/&quot;&gt;Develo vlog&lt;/a&gt; has the article aboute development modules for Vue Storefront project. This may help in the development of new modules.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Clear redis cache from you docker container]]></title><description><![CDATA[Sometimes need clear all   cache for you Doker container. For automating this process you can add the   to   or  . Example:]]></description><link>http://dimasch.github.io//redis-clear/</link><guid isPermaLink="false">http://dimasch.github.io//redis-clear/</guid><pubDate>Sat, 10 Nov 2018 21:27:01 GMT</pubDate><content:encoded>&lt;p&gt;
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;- Admin Users: 50
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;- Websites: 1
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;- Store Groups Count: 1
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;- Store Views Count: 1
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;- Categories: 30
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;- Attribute Sets &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Default&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;: 3
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;- Attribute Sets &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Extra&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;: 10
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;- Simple products: 800
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;- Configurable products: 16
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;- Product images: 100, 3 per product
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;- Customers: 200
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;- Cart Price Rules: 20
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;- Catalog Price Rules: 20
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;- Orders: 80
+Config Changes&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:00
+Generating admin users&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:00
+Generating websites, stores and store views&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:00
+Generating categories&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:01
+Generating attribute sets&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:02
+Generating simple products&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:03
+Generating configurable EAV variations&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:00
+Generating bundle products&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:00
+Generating configurable products&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:01
+Generating images&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:01
+Generating customer groups&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:00
+Generating customers&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:02
+Generating cart price rules&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:00
+Generating catalog price rules&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:00
+Generating tax rates&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:00
+Generating tax rules&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:00
+Generating orders&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:00
+Indexers Mode Changes&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; 00:00:00&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Development the Paypal Module for Vue Storefront]]></title><description><![CDATA[The  Develo vlog  has the article aboute development modules for Vue Storefront project. This may help in the development of new modules.]]></description><link>http://dimasch.github.io//vsf-paypal-module/</link><guid isPermaLink="false">http://dimasch.github.io//vsf-paypal-module/</guid><pubDate>Sun, 16 Dec 2018 09:30:00 GMT</pubDate><content:encoded>&lt;p&gt;The &lt;a href=&quot;https://www.develodesign.co.uk/news/&quot;&gt;Develo vlog&lt;/a&gt; has the article aboute development modules for Vue Storefront project. This may help in the development of new modules.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Clear redis cache from you docker container]]></title><description><![CDATA[Sometimes need clear all   cache for you Doker container. For automating this process you can add the   to   or  . Example:]]></description><link>http://dimasch.github.io//redis-clear/</link><guid isPermaLink="false">http://dimasch.github.io//redis-clear/</guid><pubDate>Sat, 10 Nov 2018 21:27:01 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1991df597267d70bf9066a7d11969da0/d445f/redis.png&quot;
+    href=&quot;/static/1991df597267d70bf9066a7d11969da0/e5f70/redis.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -711,10 +863,10 @@ Indexers Mode Changes...  done in 00:00:00&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;<
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Redis Logo&quot;
         title=&quot;&quot;
-        src=&quot;/static/1991df597267d70bf9066a7d11969da0/d445f/redis.png&quot;
-        srcset=&quot;/static/1991df597267d70bf9066a7d11969da0/6235f/redis.png 148w,
-/static/1991df597267d70bf9066a7d11969da0/7d356/redis.png 295w,
-/static/1991df597267d70bf9066a7d11969da0/d445f/redis.png 513w&quot;
+        src=&quot;/static/1991df597267d70bf9066a7d11969da0/e5f70/redis.png&quot;
+        srcset=&quot;/static/1991df597267d70bf9066a7d11969da0/cf440/redis.png 148w,
+/static/1991df597267d70bf9066a7d11969da0/d2d38/redis.png 295w,
+/static/1991df597267d70bf9066a7d11969da0/e5f70/redis.png 513w&quot;
         sizes=&quot;(max-width: 513px) 100vw, 513px&quot;
       /&gt;
     &lt;/span&gt;
@@ -723,10 +875,10 @@ Indexers Mode Changes...  done in 00:00:00&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;<
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;Sometimes need clear all &lt;code class=&quot;language-text&quot;&gt;Redis&lt;/code&gt; cache for you Doker container.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;docker exec -it container-name redis-cli FLUSHALL&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;docker &lt;span class=&quot;token function&quot;&gt;exec&lt;/span&gt; -it container-name redis-cli FLUSHALL&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;For automating this process you can add the &lt;code class=&quot;language-text&quot;&gt;alias&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;~/.bash_profile&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;~/.basrc&lt;/code&gt;. Example:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;alias redis-flush=&amp;quot;docker exec -it container-name redis-cli FLUSHALL&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Check disk space usage on linux with Ncdu]]></title><description><![CDATA[Disk usage analisis by   linux utility. Install   on Debian/Ubuntu linux: Example usage:]]></description><link>http://dimasch.github.io//disk-usage-analisis/</link><guid isPermaLink="false">http://dimasch.github.io//disk-usage-analisis/</guid><pubDate>Mon, 12 Mar 2018 11:57:00 GMT</pubDate><content:encoded>&lt;p&gt;Disk usage analisis by &lt;code class=&quot;language-text&quot;&gt;ncdu&lt;/code&gt; linux utility. Install &lt;code class=&quot;language-text&quot;&gt;ncdu&lt;/code&gt; on Debian/Ubuntu linux:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;sudo apt-get install ncdu -y&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;alias&lt;/span&gt; redis-flush&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;docker exec -it container-name redis-cli FLUSHALL&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Check disk space usage on linux with Ncdu]]></title><description><![CDATA[Disk usage analisis by   linux utility. Install   on Debian/Ubuntu linux: Example usage:]]></description><link>http://dimasch.github.io//disk-usage-analisis/</link><guid isPermaLink="false">http://dimasch.github.io//disk-usage-analisis/</guid><pubDate>Mon, 12 Mar 2018 11:57:00 GMT</pubDate><content:encoded>&lt;p&gt;Disk usage analisis by &lt;code class=&quot;language-text&quot;&gt;ncdu&lt;/code&gt; linux utility. Install &lt;code class=&quot;language-text&quot;&gt;ncdu&lt;/code&gt; on Debian/Ubuntu linux:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apt-get&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; ncdu -y&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Example usage:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;ncdu you-directory&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Remove block via Layout Update XML via Magento2 admin area]]></title><description><![CDATA[Remove block via Layout Update XML via Magento2 admin area:]]></description><link>http://dimasch.github.io//m2-remove-block-from-admin/</link><guid isPermaLink="false">http://dimasch.github.io//m2-remove-block-from-admin/</guid><pubDate>Mon, 11 Sep 2017 15:31:00 GMT</pubDate><content:encoded>&lt;p&gt;Remove block via Layout Update XML via Magento2 admin area:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;xml&quot;&gt;&lt;pre class=&quot;language-xml&quot;&gt;&lt;code class=&quot;language-xml&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;container&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;bin&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;htmlTag&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;div&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
@@ -749,18 +901,18 @@ Indexers Mode Changes...  done in 00:00:00&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;<
 &lt;p&gt;Один из плюсов - полная интеграция &lt;code class=&quot;language-text&quot;&gt;modman&lt;/code&gt; и &lt;code class=&quot;language-text&quot;&gt;composer&lt;/code&gt;. Композер умеет читать маппинг модман-файла, то есть маппинг находится в одном файле и можно использовать две технологии одновременно.&lt;/p&gt;
 &lt;p&gt;Теперь самое интересное - как же автоматизировать все рутинные операции? Тут нам помогут &lt;a href=&quot;https://github.com/netz98/n98-magerun&quot;&gt;n98-magerun&lt;/a&gt; и &lt;a href=&quot;https://github.com/mhauri/generate-modman&quot;&gt;generate-modman&lt;/a&gt;.
 &lt;p&gt;Как &lt;code class=&quot;language-text&quot;&gt;n98magerun&lt;/code&gt; и &lt;code class=&quot;language-text&quot;&gt;generate-modman&lt;/code&gt; можно использовать применительно к modman? В &lt;code class=&quot;language-text&quot;&gt;n98magerun&lt;/code&gt; есть генератор модуля, но тут необходимо добавить магические ключи:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;n98-magerun dev:module:create --add-all --modman --add-composer --author-name=&amp;quot;Autor Name&amp;quot; --author-email=&amp;quot;@gmail.com&amp;quot; CustomNamespace CustomModule local&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;n98-magerun dev:module:create --add-all --modman --add-composer --author-name&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Autor Name&quot;&lt;/span&gt; --author-email&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;@gmail.com&quot;&lt;/span&gt; CustomNamespace CustomModule local&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Командой будет создан скелетон модуля &lt;code class=&quot;language-text&quot;&gt;CustomModule&lt;/code&gt; с стандартной структурой magento-модуля, предподготовленным файлом конфигурации composer.json, c неймспейсом &lt;code class=&quot;language-text&quot;&gt;CustomNamespace&lt;/code&gt; в &lt;code class=&quot;language-text&quot;&gt;local code pull&lt;/code&gt; и соответствующим файлом маппинга modman. Ключи &lt;code class=&quot;language-text&quot;&gt;--author-name&lt;/code&gt; и &lt;code class=&quot;language-text&quot;&gt;--author-email&lt;/code&gt; добавят параметры в &lt;code class=&quot;language-text&quot;&gt;composer.json&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Структура каталогов получилась не совсем стандартной из-за директории &lt;code class=&quot;language-text&quot;&gt;src&lt;/code&gt;. Давайте её уберем: переносим содержимое &lt;code class=&quot;language-text&quot;&gt;src&lt;/code&gt; в текущюю папку, удаляем &lt;code class=&quot;language-text&quot;&gt;src&lt;/code&gt; и вызываем генератор автоматического маппинга &lt;code class=&quot;language-text&quot;&gt;generate-modman&lt;/code&gt;. В итоге должна получиться структура:&lt;/p&gt;
 &lt;p&gt;Допустим в процессе работы понадобилось замапить ещё одну директорию - не забываем перегенирить &lt;code class=&quot;language-text&quot;&gt;modman&lt;/code&gt; файл маппинга и починить все симлинки &lt;code class=&quot;language-text&quot;&gt;modman repair&lt;/code&gt;. Из документации:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;repair - rebuild all modman-created symlinks (no updates performed)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;repair - rebuild all modman-created symlinks &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;no updates performed&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Можно набрать в консоли команду &lt;code class=&quot;language-text&quot;&gt;modman&lt;/code&gt; - выдаст документацию, в которой можно быстро найти нужный ключ.&lt;/p&gt;
 &lt;p&gt;C наступающий Старым Новым Годом! :)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Admin user creation in Magento2]]></title><description><![CDATA[Execute next command in directory with installed Magento2]]></description><link>http://dimasch.github.io//m2-create-admin/</link><guid isPermaLink="false">http://dimasch.github.io//m2-create-admin/</guid><pubDate>Tue, 16 Jun 2015 21:42:03 GMT</pubDate><content:encoded>&lt;p&gt;Execute next command in directory with installed Magento2&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;./bin/magento admin:user:create --admin-firstname=&amp;quot;Admin&amp;quot; --admin-lastname=&amp;quot;User&amp;quot; --admin-email=&amp;quot;dimasch@gmail.com&amp;quot; --admin-user=&amp;quot;dimasch&amp;quot; --admin-password=&amp;quot;dimasch&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;./bin/magento admin:user:create --admin-firstname&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Admin&quot;&lt;/span&gt; --admin-lastname&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;User&quot;&lt;/span&gt; --admin-email&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;dimasch@gmail.com&quot;&lt;/span&gt; --admin-user&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;dimasch&quot;&lt;/span&gt; --admin-password&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;dimasch&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a7ecb4554bcaa3457713173b0b9a38c8/265dd/login.png&quot;
+    href=&quot;/static/a7ecb4554bcaa3457713173b0b9a38c8/7bc83/login.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -779,14 +931,14 @@ Indexers Mode Changes...  done in 00:00:00&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;<
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Login to Magento2 backend&quot;
         title=&quot;&quot;
-        src=&quot;/static/a7ecb4554bcaa3457713173b0b9a38c8/fb8a0/login.png&quot;
-        srcset=&quot;/static/a7ecb4554bcaa3457713173b0b9a38c8/1a291/login.png 148w,
-/static/a7ecb4554bcaa3457713173b0b9a38c8/2bc4a/login.png 295w,
-/static/a7ecb4554bcaa3457713173b0b9a38c8/fb8a0/login.png 590w,
-/static/a7ecb4554bcaa3457713173b0b9a38c8/526de/login.png 885w,
-/static/a7ecb4554bcaa3457713173b0b9a38c8/fa2eb/login.png 1180w,
-/static/a7ecb4554bcaa3457713173b0b9a38c8/08f6a/login.png 1770w,
-/static/a7ecb4554bcaa3457713173b0b9a38c8/265dd/login.png 1826w&quot;
+        src=&quot;/static/a7ecb4554bcaa3457713173b0b9a38c8/b9e4f/login.png&quot;
+        srcset=&quot;/static/a7ecb4554bcaa3457713173b0b9a38c8/cf440/login.png 148w,
+/static/a7ecb4554bcaa3457713173b0b9a38c8/d2d38/login.png 295w,
+/static/a7ecb4554bcaa3457713173b0b9a38c8/b9e4f/login.png 590w,
+/static/a7ecb4554bcaa3457713173b0b9a38c8/f9b6a/login.png 885w,
+/static/a7ecb4554bcaa3457713173b0b9a38c8/2d849/login.png 1180w,
+/static/a7ecb4554bcaa3457713173b0b9a38c8/bbefa/login.png 1770w,
+/static/a7ecb4554bcaa3457713173b0b9a38c8/7bc83/login.png 1826w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -797,7 +949,7 @@ Indexers Mode Changes...  done in 00:00:00&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;<
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/fa44ae7d5f524b457e44b69e8bd0bdfe/66900/show-git-branch.png&quot;
+    href=&quot;/static/fa44ae7d5f524b457e44b69e8bd0bdfe/7f2c6/show-git-branch.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -816,13 +968,13 @@ Indexers Mode Changes...  done in 00:00:00&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;<
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Show git branch&quot;
         title=&quot;&quot;
-        src=&quot;/static/fa44ae7d5f524b457e44b69e8bd0bdfe/fb8a0/show-git-branch.png&quot;
-        srcset=&quot;/static/fa44ae7d5f524b457e44b69e8bd0bdfe/1a291/show-git-branch.png 148w,
-/static/fa44ae7d5f524b457e44b69e8bd0bdfe/2bc4a/show-git-branch.png 295w,
-/static/fa44ae7d5f524b457e44b69e8bd0bdfe/fb8a0/show-git-branch.png 590w,
-/static/fa44ae7d5f524b457e44b69e8bd0bdfe/526de/show-git-branch.png 885w,
-/static/fa44ae7d5f524b457e44b69e8bd0bdfe/fa2eb/show-git-branch.png 1180w,
-/static/fa44ae7d5f524b457e44b69e8bd0bdfe/66900/show-git-branch.png 1194w&quot;
+        src=&quot;/static/fa44ae7d5f524b457e44b69e8bd0bdfe/b9e4f/show-git-branch.png&quot;
+        srcset=&quot;/static/fa44ae7d5f524b457e44b69e8bd0bdfe/cf440/show-git-branch.png 148w,
+/static/fa44ae7d5f524b457e44b69e8bd0bdfe/d2d38/show-git-branch.png 295w,
+/static/fa44ae7d5f524b457e44b69e8bd0bdfe/b9e4f/show-git-branch.png 590w,
+/static/fa44ae7d5f524b457e44b69e8bd0bdfe/f9b6a/show-git-branch.png 885w,
+/static/fa44ae7d5f524b457e44b69e8bd0bdfe/2d849/show-git-branch.png 1180w,
+/static/fa44ae7d5f524b457e44b69e8bd0bdfe/7f2c6/show-git-branch.png 1194w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -831,19 +983,19 @@ Indexers Mode Changes...  done in 00:00:00&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;<
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;Open you &lt;code class=&quot;language-text&quot;&gt;~/.bashrc&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;~/.bash_profile&lt;/code&gt; and add this snippet:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;# Add git branch if its present to PS1
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# Add git branch if its present to PS1&lt;/span&gt;
 
-parse_git_branch() {
- git branch 2&amp;gt; /dev/null | sed -e &amp;#39;/^[^*]/d&amp;#39; -e &amp;#39;s/* \(.*\)/(\1)/&amp;#39;
-}
-if [ &amp;quot;$color_prompt&amp;quot; = yes ]; then
- PS1=&amp;#39;${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;31m\]$(parse_git_branch)\[\033[00m\]\$ &amp;#39;
-else
- PS1=&amp;#39;${debian_chroot:+($debian_chroot)}\u@\h:\w$(parse_git_branch)\$ &amp;#39;
-fi&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+parse_git_branch&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; branch 2&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; /dev/null &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; -e &lt;span class=&quot;token string&quot;&gt;&apos;/^[^*]/d&apos;&lt;/span&gt; -e &lt;span class=&quot;token string&quot;&gt;&apos;s/* \(.*\)/(\1)/&apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$color_prompt&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;yes&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+ PS1&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&lt;span class=&quot;token variable&quot;&gt;${debian_chroot:+($debian_chroot)}&lt;/span&gt;\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;31m\]&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;parse_git_branch&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;\[\033[00m\]\$ &apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;
+ PS1&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&lt;span class=&quot;token variable&quot;&gt;${debian_chroot:+($debian_chroot)}&lt;/span&gt;\u@\h:\w&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;parse_git_branch&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;\$ &apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Is meant to &lt;code class=&quot;language-text&quot;&gt;replace&lt;/code&gt; the default prompt definition:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;if [ &amp;quot;$color_prompt&amp;quot; = yes ]; then
-    PS1=&amp;#39;${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ &amp;#39;
-else
-    PS1=&amp;#39;${debian_chroot:+($debian_chroot)}\u@\h:\w\$ &amp;#39;
-fi&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$color_prompt&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;yes&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+    PS1&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&lt;span class=&quot;token variable&quot;&gt;${debian_chroot:+($debian_chroot)}&lt;/span&gt;\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ &apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;
+    PS1&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&lt;span class=&quot;token variable&quot;&gt;${debian_chroot:+($debian_chroot)}&lt;/span&gt;\u@\h:\w\$ &apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
